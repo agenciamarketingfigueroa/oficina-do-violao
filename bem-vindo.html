@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" type="image/png"
+      href="assets/img/Logo/Logo%20Oficina%20do%20viola%CC%83o.png" />
+    <meta name="description"
+      content="Boas-vindas e primeiros passos para membros da Oficina do Violão." />
+    <title>Bem-vindo à Oficina do Violão</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body class="welcome-page">
+    <header class="welcome-header">
+      <div class="container welcome-header-inner">
+        <a href="index.html" aria-label="Voltar para a página inicial">
+          <img
+            src="assets/img/Logo/Logo%20Horizontal%20Oficina%20do%20Viola%CC%83o.png"
+            alt="Oficina do Violão"
+            width="300"
+            height="60"
+          />
+        </a>
+        <span>Área do membro • Boas-vindas</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="welcome-hero">
+        <div class="hero-lines" aria-hidden="true"></div>
+        <div class="container welcome-hero-inner reveal">
+          <p class="eyebrow"><span></span> Você está dentro</p>
+          <h1>Bem-vindo à Oficina <span>🎸</span></h1>
+          <p>Seu próximo passo agora é preparar tudo para chegar bem ao primeiro encontro.</p>
+          <a class="text-link"
+            href="#primeiros-passos">Começar agora <span>↓</span></a>
+        </div>
+      </section>
+
+      <section class="section welcome-steps" id="primeiros-passos">
+        <div class="container">
+          <div class="welcome-section-heading reveal">
+            <p class="section-kicker">Antes da primeira aula</p>
+            <h2>Cinco passos rápidos.<br />Depois, é só tocar.</h2>
+          </div>
+
+          <ol class="onboarding-steps reveal">
+            <li>
+              <span>01</span>
+              <div><strong>Entre na comunidade</strong><p>É lá que chegam avisos, repertório e conversas da turma.</p></div>
+              <button type="button" data-pending-action>Entrar <i>↗</i></button>
+            </li>
+            <li>
+              <span>02</span>
+              <div><strong>Veja o próximo encontro</strong><p>Confira o dia, horário e o tema da nossa aula ao vivo.</p></div>
+              <button type="button"
+                data-pending-action>Ver agenda <i>↗</i></button>
+            </li>
+            <li>
+              <span>03</span>
+              <div><strong>Adicione à sua agenda</strong><p>Reserve esse tempo semanal para você e para o violão.</p></div>
+              <button type="button"
+                data-pending-action>Adicionar <i>+</i></button>
+            </li>
+            <li>
+              <span>04</span>
+              <div><strong>Conte onde você está</strong><p>O diagnóstico abaixo ajuda a orientar a experiência da turma.</p></div>
+              <a href="#diagnostico">Responder <i>↓</i></a>
+            </li>
+            <li>
+              <span>05</span>
+              <div><strong>Prepare seu instrumento</strong><p>Violão afinado, um lugar confortável e vontade de continuar.</p></div>
+              <button type="button"
+                data-check-step>Marcar feito <i>✓</i></button>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section diagnosis-section" id="diagnostico">
+        <div class="container diagnosis-grid">
+          <div class="diagnosis-copy reveal">
+            <p class="section-kicker">Diagnóstico inicial</p>
+            <h2>Vamos começar de onde você está.</h2>
+            <p>Não há resposta certa. Suas respostas ajudam a entender o momento da turma e a construir um caminho relevante.</p>
+            <div class="form-progress" aria-label="Progresso do formulário">
+              <span><i data-form-progress></i></span>
+              <small><b data-current-step>1</b> de 3</small>
+            </div>
+          </div>
+
+          <form class="diagnosis-form reveal" data-onboarding-form>
+            <fieldset class="form-step active" data-form-step="1">
+              <legend>Seu momento com o violão</legend>
+              <label>
+                Há quanto tempo você toca?
+                <select name="tempo" required>
+                  <option value="">Escolha uma opção</option>
+                  <option>Nunca toquei</option>
+                  <option>Menos de 6 meses</option>
+                  <option>De 6 meses a 2 anos</option>
+                  <option>Mais de 2 anos, com pausas</option>
+                  <option>Mais de 2 anos, com frequência</option>
+                </select>
+              </label>
+              <label>
+                Quais músicas você já consegue tocar?
+                <textarea name="musicas-atuais" rows="4" placeholder="Pode escrever nenhuma — tudo bem."></textarea>
+              </label>
+              <label>
+                Qual é sua maior dificuldade hoje?
+                <textarea name="dificuldade" rows="4" required placeholder="Trocas, ritmo, pestana, constância..."></textarea>
+              </label>
+            </fieldset>
+
+            <fieldset class="form-step" data-form-step="2" hidden>
+              <legend>A música que você quer fazer</legend>
+              <label>
+                Quais estilos você mais gosta?
+                <input type="text" name="estilos" required placeholder="MPB, rock, sertanejo, gospel..." />
+              </label>
+              <label>
+                Que músicas gostaria de aprender?
+                <textarea name="desejos" rows="4" placeholder="Escreva quantas lembrar."></textarea>
+              </label>
+              <div class="choice-group">
+                <span>O que você quer desenvolver?</span>
+                <label
+                  class="choice"><input type="checkbox" name="objetivos" value="tocar-cantar" /><span>Tocar e cantar</span></label>
+                <label
+                  class="choice"><input type="checkbox" name="objetivos" value="igreja" /><span>Tocar em igreja</span></label>
+                <label
+                  class="choice"><input type="checkbox" name="objetivos" value="amigos" /><span>Tocar com amigos</span></label>
+                <label
+                  class="choice"><input type="checkbox" name="objetivos" value="autonomia" /><span>Aprender com autonomia</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-step" data-form-step="3" hidden>
+              <legend>Sua rotina possível</legend>
+              <label>
+                Quanto tempo você consegue reservar para praticar?
+                <select name="disponibilidade" required>
+                  <option value="">Escolha uma opção</option>
+                  <option>10 a 15 minutos, 2 vezes por semana</option>
+                  <option>10 a 20 minutos, 3 vezes por semana</option>
+                  <option>20 a 30 minutos, 3 vezes por semana</option>
+                  <option>Mais de 30 minutos, 4 ou mais vezes por semana</option>
+                  <option>Ainda preciso organizar minha rotina</option>
+                </select>
+              </label>
+              <label>
+                Qual é seu principal objetivo com o violão agora?
+                <textarea name="objetivo-principal" rows="5" required placeholder="Conte com suas palavras."></textarea>
+              </label>
+              <div class="form-summary">
+                <span>✓</span>
+                <p><strong>Pronto para começar.</strong> Você poderá atualizar essas respostas conforme evoluir.</p>
+              </div>
+            </fieldset>
+
+            <div class="form-actions">
+              <button class="button form-back" type="button" data-form-back
+                hidden>Voltar</button>
+              <button class="button button-primary" type="button"
+                data-form-next>Continuar <span>→</span></button>
+              <button class="button button-primary" type="submit"
+                data-form-submit
+                hidden>Enviar diagnóstico <span>↗</span></button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="welcome-footer">
+      <div class="container">
+        <p>Seu violão não precisa de mais um recomeço. Precisa de continuidade.</p>
+        <a href="index.html">Voltar ao site</a>
+      </div>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" data-toast>
+      <button type="button" aria-label="Fechar aviso"
+        data-toast-close>×</button>
+      <strong data-toast-title>Integração pendente.</strong>
+      <span
+        data-toast-message>Este link será ativado quando as ferramentas da turma forem definidas.</span>
+    </div>
+  </body>
+</html>
