@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Treinos rápidos de cifras, acordes e conceitos musicais para praticar no violão." />
+    <title>Flashcards da Oficina — Oficina do Violão</title>
+    <link rel="icon" type="image/png" href="../../assets/img/logo-square.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="flashcards.css" />
+    <script defer src="../../script.js"></script>
+    <script defer src="decks.js"></script>
+    <script defer src="flashcards.js"></script>
+  </head>
+  <body class="practice-page">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header scrolled" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="../../" aria-label="Oficina do Violão — início"><img class="logo-horizontal" src="../../assets/img/logo-horizontal.png" alt="Oficina do Violão" width="300" height="60" /></a>
+        <nav class="desktop-nav" aria-label="Navegação principal">
+          <a href="../../#como-funciona">Como funciona</a>
+          <a href="../../#caminho">Seu caminho</a>
+          <a href="../" aria-current="location">Praticar</a>
+          <a href="../../#faq">Dúvidas</a>
+        </nav>
+        <a class="button button-small button-outline header-cta" href="../../#turma">Entrar na lista</a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle><span></span><span></span></button>
+      </div>
+      <nav class="mobile-nav" aria-label="Navegação mobile" data-mobile-nav>
+        <a href="../../#como-funciona">Como funciona</a>
+        <a href="../../#caminho">Seu caminho</a>
+        <a href="../" aria-current="location">Praticar</a>
+        <a href="../../#faq">Dúvidas</a>
+        <a href="../../#turma">Entrar na lista</a>
+      </nav>
+    </header>
+
+    <main id="conteudo" class="practice-main">
+      <div class="container practice-shell">
+        <section data-screen="intro">
+          <p class="eyebrow"><span></span> Praticar • Oficina do Violão</p>
+          <h1>Flashcards <em>da Oficina.</em></h1>
+          <p class="practice-lead">Escolha um tema, tente lembrar a resposta e vire o card para conferir.</p>
+          <p class="practice-tagline">Alguns minutos aqui. Depois, violão na mão.</p>
+          <div class="practice-section-heading"><p class="section-kicker">Escolha um tema</p><span data-deck-total></span></div>
+          <div class="practice-grid" data-deck-list></div>
+          <noscript><p>Ative o JavaScript para estudar com os Flashcards.</p></noscript>
+          <aside class="practice-note">
+            <p class="section-kicker">Toda semana, um próximo passo.</p>
+            <p>Os Flashcards ajudam a lembrar. O violão transforma isso em música.</p>
+          </aside>
+          <aside class="practice-community">
+            <div><p class="section-kicker">Comunidade</p><h2>Está começando sua caminhada?</h2><p>O <strong>Ré Maior</strong> é o ponto de encontro da comunidade da Oficina do Violão para quem está começando, retomando ou decidiu continuar.</p></div>
+            <a class="button button-outline" href="https://chat.whatsapp.com/GHTme1DQgZ0Eo4JDSDkJsL?s=cl&amp;p=i&amp;ilr=4&amp;iam=0" target="_blank" rel="noopener noreferrer">Entrar no Ré Maior <span aria-hidden="true">↗</span></a>
+          </aside>
+        </section>
+
+        <section class="practice-session" data-screen="session" hidden aria-labelledby="session-title">
+          <button class="practice-back" type="button" data-choose>← Escolher outro tema</button>
+          <div class="practice-session-head">
+            <p class="section-kicker" data-session-type>Treino</p>
+            <h1 id="session-title" data-session-title tabindex="-1"></h1>
+            <div class="practice-progress-text"><span data-progress-label>1 de 12</span><span>FLASHCARDS</span></div>
+            <div class="practice-progress" role="progressbar" aria-label="Progresso da sessão" aria-valuemin="0" aria-valuemax="12" aria-valuenow="0" data-progress><span data-progress-fill></span></div>
+          </div>
+          <div class="practice-card-wrap">
+            <div class="practice-flashcard" aria-live="off">
+              <span class="practice-card-label" data-card-label>FRENTE / PENSE NA RESPOSTA</span>
+              <div class="practice-card-content" data-card-content tabindex="-1"></div>
+              <span class="practice-card-count" data-card-count>01 / 12</span>
+            </div>
+            <div class="practice-actions">
+              <button class="button button-primary button-full" type="button" data-reveal>Ver resposta <span aria-hidden="true">↗</span></button>
+              <div class="practice-answer-actions" data-answer-actions hidden>
+                <button class="button button-outline" type="button" data-missed>Não lembrei</button>
+                <button class="button button-primary" type="button" data-correct>Acertei</button>
+              </div>
+            </div>
+            <p class="practice-keyboard-hint">Atalhos: espaço para revelar · 1 não lembrei · 2 acertei</p>
+          </div>
+          <p class="practice-announcement" aria-live="polite" aria-atomic="true" data-announcement></p>
+        </section>
+
+        <section class="practice-result" data-screen="result" hidden aria-labelledby="result-title">
+          <p class="eyebrow"><span></span> Praticar • Oficina do Violão</p>
+          <p class="section-kicker" data-result-deck></p>
+          <h1 id="result-title" data-result-title tabindex="-1">Sessão concluída</h1>
+          <div class="practice-result-card">
+            <p class="practice-score"><strong data-score>0 de 12</strong><span>VOCÊ LEMBROU</span></p>
+            <p data-result-message></p>
+          </div>
+          <div class="practice-result-actions">
+            <button class="button button-outline" type="button" data-review hidden>Revisar os que errei</button>
+            <button class="button button-primary" type="button" data-restart>Jogar novamente</button>
+            <button class="practice-back" type="button" data-choose>Escolher outro tema →</button>
+          </div>
+          <p class="practice-result-foot">Agora, violão na mão.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <img class="logo-horizontal" src="../../assets/img/logo-horizontal.png" alt="Oficina do Violão" width="300" height="60" />
+        <p>Toda semana, um próximo passo.</p>
+        <div class="footer-links"><a href="../../">Início</a><a href="../">Praticar</a><a href="../quiz/">Quiz</a><a href="../../bem-vindo.html">Área do aluno</a></div>
+      </div>
+      <div class="container footer-bottom"><span>© <span data-year></span> Oficina do Violão</span><span>Feito para continuar.</span></div>
+    </footer>
+  </body>
+</html>

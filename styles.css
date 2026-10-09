@@ -193,6 +193,8 @@ a {
 .hero {
   min-height: 850px;
   position: relative;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   padding-top: 84px;
   background:
@@ -215,6 +217,7 @@ a {
 
 .hero-grid {
   min-height: 680px;
+  flex: 1;
   display: grid;
   grid-template-columns: 1.08fr 0.92fr;
   align-items: center;
@@ -524,9 +527,8 @@ h3 {
 }
 
 .hero-marquee {
-  position: absolute;
+  position: relative;
   z-index: 3;
-  bottom: 0;
   width: 100%;
   overflow: hidden;
   border-block: 1px solid rgba(255, 86, 0, 0.45);
@@ -535,19 +537,30 @@ h3 {
   white-space: nowrap;
 }
 
-.hero-marquee div {
+.hero-marquee-track {
+  display: flex;
   width: max-content;
-  padding: 15px 0;
+  animation: marquee 30s linear infinite;
+}
+
+.hero-marquee-group {
+  min-width: 100vw;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 15px 20px;
   font-family: var(--font-display);
   font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 0.2em;
-  animation: marquee 30s linear infinite;
 }
 
-.hero-marquee span {
-  padding-inline: 25px;
+.hero-marquee-group i {
+  color: var(--orange);
   font-size: 0.48rem;
+  font-style: normal;
 }
 
 @keyframes marquee {

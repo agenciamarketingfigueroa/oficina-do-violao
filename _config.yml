@@ -8,3 +8,6 @@ exclude:
   - guia-acordes-sequencia/diagramas
   - guia-acordes-sequencia/tools
   - guia-acordes-sequencia/README.md
+  - praticar/flashcards/README.md
+  - praticar/quiz/README.md
+  - praticar/nivelador/README.md

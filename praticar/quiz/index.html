@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Quiz da Oficina: escolha um tema e teste cifras, acordes e conceitos musicais em perguntas rápidas." />
+    <title>Quiz da Oficina — Oficina do Violão</title>
+    <link rel="icon" type="image/png" href="../../assets/img/logo-square.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../flashcards/flashcards.css" />
+    <link rel="stylesheet" href="quiz.css" />
+    <script defer src="../../script.js"></script>
+    <script defer src="../flashcards/decks.js"></script>
+    <script defer src="quiz.js"></script>
+  </head>
+  <body class="practice-page quiz-page">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header scrolled" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="../../" aria-label="Oficina do Violão — início"><img class="logo-horizontal" src="../../assets/img/logo-horizontal.png" alt="Oficina do Violão" width="300" height="60" /></a>
+        <nav class="desktop-nav" aria-label="Navegação principal">
+          <a href="../../#como-funciona">Como funciona</a>
+          <a href="../../#caminho">Seu caminho</a>
+          <a href="../" aria-current="location">Praticar</a>
+          <a href="../../#faq">Dúvidas</a>
+        </nav>
+        <a class="button button-small button-outline header-cta" href="../../#turma">Entrar na lista</a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle><span></span><span></span></button>
+      </div>
+      <nav class="mobile-nav" aria-label="Navegação mobile" data-mobile-nav>
+        <a href="../../#como-funciona">Como funciona</a>
+        <a href="../../#caminho">Seu caminho</a>
+        <a href="../" aria-current="location">Praticar</a>
+        <a href="../../#faq">Dúvidas</a>
+        <a href="../../#turma">Entrar na lista</a>
+      </nav>
+    </header>
+
+    <main id="conteudo" class="practice-main">
+      <div class="container practice-shell">
+        <section data-screen="intro">
+          <p class="eyebrow"><span></span> Praticar • Oficina do Violão</p>
+          <h1>Quiz <em>da Oficina.</em></h1>
+          <p class="practice-lead">Escolha um tema, marque uma resposta e confira na hora o que você já sabe.</p>
+          <p class="practice-tagline">Teste a memória por alguns minutos. Depois, violão na mão.</p>
+          <div class="practice-section-heading"><p class="section-kicker">Escolha um tema</p><span data-deck-total></span></div>
+          <div class="practice-grid" data-deck-list></div>
+          <noscript><p>Ative o JavaScript para fazer o Quiz.</p></noscript>
+          <aside class="practice-note">
+            <p class="section-kicker">Quer revisar antes?</p>
+            <p>Os Flashcards ajudam a lembrar. O quiz ajuda a conferir.</p>
+            <a class="button button-outline" href="../flashcards/">Ir para os Flashcards <span aria-hidden="true">↗</span></a>
+          </aside>
+        </section>
+
+        <section class="practice-session quiz-session" data-screen="session" hidden aria-labelledby="session-title">
+          <button class="practice-back" type="button" data-choose>← Escolher outro tema</button>
+          <div class="practice-session-head">
+            <p class="section-kicker" data-session-type>Quiz</p>
+            <h1 id="session-title" data-session-title tabindex="-1"></h1>
+            <div class="practice-progress-text"><span data-progress-label></span><span>PERGUNTAS</span></div>
+            <div class="practice-progress" role="progressbar" aria-label="Progresso do quiz" aria-valuemin="0" aria-valuemax="20" aria-valuenow="0" data-progress><span data-progress-fill></span></div>
+          </div>
+          <div class="quiz-question" aria-labelledby="question-text">
+            <span class="quiz-question-number" data-question-number></span>
+            <p class="quiz-question-instruction" data-question-instruction></p>
+            <h2 id="question-text" data-question-text tabindex="-1"></h2>
+          </div>
+          <div class="quiz-options" role="group" aria-label="Alternativas" data-options></div>
+          <div class="quiz-feedback" role="status" aria-live="polite" data-feedback hidden>
+            <strong data-feedback-title></strong>
+            <p data-feedback-text></p>
+          </div>
+          <button class="button button-primary quiz-next" type="button" data-next hidden><span data-next-label>Próxima pergunta</span><span aria-hidden="true">↗</span></button>
+        </section>
+
+        <section class="practice-result quiz-result" data-screen="result" hidden aria-labelledby="result-title">
+          <p class="eyebrow"><span></span> Praticar • Oficina do Violão</p>
+          <p class="section-kicker" data-result-deck></p>
+          <h1 id="result-title" data-result-title tabindex="-1">Quiz concluído</h1>
+          <div class="practice-result-card">
+            <p class="practice-score"><strong data-score></strong><span>RESPOSTAS CERTAS</span></p>
+            <p data-result-message></p>
+          </div>
+          <div class="practice-result-actions">
+            <button class="button button-outline" type="button" data-review hidden>Revisar as que errei</button>
+            <button class="button button-primary" type="button" data-restart>Jogar novamente</button>
+            <button class="practice-back" type="button" data-choose>Escolher outro tema →</button>
+          </div>
+          <p class="practice-result-foot">Agora, violão na mão.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <img class="logo-horizontal" src="../../assets/img/logo-horizontal.png" alt="Oficina do Violão" width="300" height="60" />
+        <p>Toda semana, um próximo passo.</p>
+        <div class="footer-links"><a href="../../">Início</a><a href="../">Praticar</a><a href="../flashcards/">Flashcards</a><a href="../../bem-vindo.html">Área do aluno</a></div>
+      </div>
+      <div class="container footer-bottom"><span>© <span data-year></span> Oficina do Violão</span><span>Feito para continuar.</span></div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Descubra seu ponto de partida na Oficina com perguntas de conhecimento e uma autoavaliação da sua prática." />
+    <title>Teste nivelador — Oficina do Violão</title>
+    <link rel="icon" type="image/png" href="../../assets/img/logo-square.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../flashcards/flashcards.css" />
+    <link rel="stylesheet" href="../quiz/quiz.css" />
+    <link rel="stylesheet" href="nivelador.css" />
+    <script defer src="../../script.js"></script>
+    <script defer src="data.js"></script>
+    <script defer src="report-data.js"></script>
+    <script defer src="model.js"></script>
+    <script defer src="nivelador.js"></script>
+  </head>
+  <body class="practice-page placement-page">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header scrolled" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="../../" aria-label="Oficina do Violão — início"><img class="logo-horizontal" src="../../assets/img/logo-horizontal.png" alt="Oficina do Violão" width="300" height="60" /></a>
+        <nav class="desktop-nav" aria-label="Navegação principal">
+          <a href="../../#como-funciona">Como funciona</a>
+          <a href="../../#caminho">Seu caminho</a>
+          <a href="../" aria-current="location">Praticar</a>
+          <a href="../../#faq">Dúvidas</a>
+        </nav>
+        <a class="button button-small button-outline header-cta" href="../../#turma">Entrar na lista</a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle><span></span><span></span></button>
+      </div>
+      <nav class="mobile-nav" aria-label="Navegação mobile" data-mobile-nav>
+        <a href="../../#como-funciona">Como funciona</a>
+        <a href="../../#caminho">Seu caminho</a>
+        <a href="../" aria-current="location">Praticar</a>
+        <a href="../../#faq">Dúvidas</a>
+        <a href="../../#turma">Entrar na lista</a>
+      </nav>
+    </header>
+
+    <main id="conteudo" class="practice-main">
+      <div class="container practice-shell">
+        <section data-screen="intro">
+          <p class="eyebrow"><span></span> Praticar • Oficina do Violão</p>
+          <h1>Seu próximo passo <em>começa aqui.</em></h1>
+          <p class="practice-lead">Descubra seu nível no acompanhamento ao violão e receba um plano de treino com exercícios e metas para evoluir.</p>
+          <div class="placement-intro-card">
+            <p class="section-kicker">24 perguntas • No seu tempo</p>
+            <h2>O que você sabe. O que já consegue tocar.</h2>
+            <p>São 12 perguntas de conhecimento e 12 sobre sua prática. Responda pelo que você consegue fazer hoje. Se puder, deixe o violão por perto para conferir.</p>
+            <p>Quando não souber, marque “Ainda não sei”. Você pode voltar e mudar uma resposta antes de terminar. A correção aparece no final.</p>
+            <button class="button button-primary" type="button" data-start>Descobrir meu ponto de partida <span aria-hidden="true">↗</span></button>
+            <p class="placement-disclaimer">O resultado é uma estimativa para orientar seus estudos, baseada nas respostas e na prática que você relata. Uma avaliação tocando com o professor pode ajustar essa indicação.</p>
+            <noscript><p>Ative o JavaScript para fazer o teste.</p></noscript>
+          </div>
+          <div class="placement-path" aria-label="Níveis do teste">
+            <span><b>01</b> Iniciante</span><span><b>02</b> Básico</span><span><b>03</b> Intermediário</span><span><b>04</b> Intermediário avançado</span><span><b>05</b> Avançado</span>
+          </div>
+          <p class="practice-tagline">Toda semana, um próximo passo.</p>
+        </section>
+
+        <section class="practice-session quiz-session" data-screen="session" hidden aria-labelledby="session-title">
+          <div class="practice-session-head">
+            <p class="section-kicker">Teste nivelador</p>
+            <h1 id="session-title" data-stage-title></h1>
+            <div class="practice-progress-text"><span data-progress-label></span><span>PERGUNTAS</span></div>
+            <div class="practice-progress" role="progressbar" aria-label="Progresso do teste" aria-valuemin="0" aria-valuemax="24" aria-valuenow="0" data-progress><span data-progress-fill></span></div>
+          </div>
+          <div class="quiz-question">
+            <span class="quiz-question-number" data-kind></span>
+            <p class="quiz-question-instruction" id="question-help" data-help></p>
+            <h2 id="question-text" class="quiz-question-long" tabindex="-1" data-question></h2>
+          </div>
+          <fieldset class="placement-options" aria-labelledby="question-text" aria-describedby="question-help" data-options></fieldset>
+          <div class="placement-navigation">
+            <button class="practice-back" type="button" data-back>← Anterior</button>
+            <button class="button button-primary" type="button" data-next disabled>Continuar <span aria-hidden="true">↗</span></button>
+          </div>
+          <p class="placement-session-note">Escolha uma opção para continuar. Seu teste fica nesta página; recarregar reinicia as respostas.</p>
+        </section>
+
+        <section class="placement-result" data-screen="result" hidden aria-labelledby="result-title">
+          <p class="eyebrow"><span></span> Seu nível prático estimado</p>
+          <h1 id="result-title" tabindex="-1" data-result-title></h1>
+          <p class="practice-lead" data-result-description></p>
+          <p class="placement-disclaimer" data-result-context></p>
+          <ol class="placement-levels" aria-label="Sua posição entre os níveis" data-levels></ol>
+          <a class="button button-primary" href="#meu-treino">Ir para meu treino <span aria-hidden="true">↓</span></a>
+          <div class="placement-diagnosis">
+            <article class="placement-summary-card"><p class="section-kicker">Por que este nível?</p><h2>O que suas respostas mostram</h2><div data-diagnosis></div></article>
+            <article class="placement-summary-card"><p class="section-kicker">Sua base atual</p><h2>O que você já faz sozinho</h2><ul class="placement-evidence" data-strengths></ul></article>
+          </div>
+          <section class="placement-theory" aria-labelledby="theory-title">
+            <p class="section-kicker">Conhecimento avaliado separadamente</p>
+            <h2 id="theory-title" data-theory-title></h2>
+            <p data-theory-description></p>
+            <div data-theory-gaps></div>
+          </section>
+          <section class="placement-next-step" id="meu-treino" aria-labelledby="plan-title">
+            <p class="section-kicker">Seu treino de hoje • 15 minutos</p>
+            <h2 id="plan-title">Pegue o violão. Comece por aqui.</h2>
+            <p>Três blocos escolhidos pelas suas respostas. Use cinco minutos em cada um. Se uma habilidade ainda for nova, fique no primeiro passo e avance nas próximas sessões.</p>
+            <p class="placement-disclaimer">Nos exercícios, a 1ª corda é a mais fina e a 6ª é a mais grossa. Um compasso é um grupo de tempos; quando indicarmos quatro tempos, conte 1, 2, 3, 4.</p>
+            <div class="placement-drills" data-plan></div>
+            <div class="placement-week"><h3>Como repetir durante a semana</h3><p>Faça estes blocos em cinco sessões de 15 minutos. Na primeira e na quinta, use o último minuto de um bloco prático para gravar o mesmo trecho. Compare as trocas, o pulso e a clareza. Quando atingir uma meta, passe a outra habilidade da lista abaixo. O ritmo de evolução é individual.</p></div>
+          </section>
+          <section class="placement-next-level" aria-labelledby="next-level-title">
+            <p class="section-kicker">Como perceber sua evolução</p>
+            <h2 id="next-level-title" data-next-step></h2>
+            <p data-next-description></p>
+            <ul class="placement-checklist" data-checklist></ul>
+          </section>
+          <details class="placement-method">
+            <summary>Ver o panorama das quatro áreas</summary>
+            <div class="placement-summary" data-summary></div>
+          </details>
+          <details class="placement-method">
+            <summary>Como chegamos a essa indicação?</summary>
+            <p>O nível prático segue as bases em ordem. Iniciante: ainda há uma das três habilidades de acordes, trocas ou música completa que você não faz sozinho. Básico: faz essas três sozinho, mas ainda desenvolve pestanas, dedilhados ou repertório. Intermediário: também faz as três de repertório sozinho, mas ainda desenvolve autonomia para aprender, transpor ou se corrigir.</p>
+            <p>Intermediário avançado: faz sozinho as nove habilidades anteriores, mas ainda não relata constância nas três de expressão e arranjo. Avançado: atende às bases anteriores e relata fazer as três de expressão com constância em uma música.</p>
+            <p>As 12 perguntas de teoria geram uma revisão separada e não rebaixam seu nível prático. As metas e os nomes dos níveis são critérios de orientação da Oficina, não uma escala certificada. Este teste aborda acompanhamento ao violão; não mede todas as técnicas, leitura musical ou performance profissional. Uma avaliação tocando com o professor pode ajustar o resultado.</p>
+          </details>
+          <details class="placement-review">
+            <summary>Ver minhas respostas e a correção</summary>
+            <div data-review></div>
+          </details>
+          <div class="practice-result-actions">
+            <a class="button button-primary" href="../">Escolher uma ferramenta <span aria-hidden="true">↗</span></a>
+            <button class="button button-outline" type="button" data-restart>Refazer o teste</button>
+          </div>
+          <p class="practice-result-foot">Alguns minutos aqui. Depois, violão na mão.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <img class="logo-horizontal" src="../../assets/img/logo-horizontal.png" alt="Oficina do Violão" width="300" height="60" />
+        <p>Toda semana, um próximo passo.</p>
+        <div class="footer-links"><a href="../../">Início</a><a href="../">Praticar</a><a href="../flashcards/">Flashcards</a><a href="../../bem-vindo.html">Área do aluno</a></div>
+      </div>
+      <div class="container footer-bottom"><span>© <span data-year></span> Oficina do Violão</span><span>Feito para continuar.</span></div>
+    </footer>
+  </body>
+</html>
