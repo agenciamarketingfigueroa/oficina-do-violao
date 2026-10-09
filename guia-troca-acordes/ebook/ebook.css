@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap");
+
+:root { --orange:#ff5600; --light:#f0f1f2; --ink:#080808; --muted:#666; }
+* { box-sizing:border-box; }
+html { background:#252525; }
+body { margin:0; font-family:"DM Sans",Arial,sans-serif; color:var(--ink); line-height:1.42; }
+.page { position:relative; width:148mm; height:210mm; overflow:hidden; margin:14px auto; padding:15mm 13mm 13mm; background:var(--light); box-shadow:0 15px 45px #0005; break-after:page; page-break-after:always; }
+.page.dark { background:#080808; color:var(--light); }
+.page.orange { background:var(--orange); color:#080808; }
+.page-top { display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid currentColor; padding-bottom:4mm; opacity:.8; font-size:7.5pt; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+.page-number { position:absolute; bottom:9mm; right:13mm; font-size:8pt; font-weight:700; opacity:.55; }
+h1,h2,h3,p { margin:0; }
+h1,h2,h3,.big,.metric { font-family:Manrope,Arial,sans-serif; letter-spacing:-.045em; }
+h1 { font-size:35pt; line-height:.99; font-weight:800; }
+h2 { margin:8mm 0 4mm; font-size:26pt; line-height:1.05; font-weight:800; }
+h3 { margin-bottom:2mm; font-size:14pt; line-height:1.1; }
+p { margin:0 0 4mm; font-size:10.4pt; }
+strong { font-weight:700; }
+.eyebrow { margin:8mm 0 3mm; color:var(--orange); font-size:8pt; font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
+.orange .eyebrow { color:#080808; }
+.lead { font-size:13pt; line-height:1.4; }
+.muted { color:var(--muted); }
+.dark .muted { color:#aaa; }
+.accent { color:var(--orange); }
+.rule { width:18mm; height:2mm; margin:7mm 0; background:var(--orange); }
+.callout { margin:6mm 0; padding:5mm; border-left:3mm solid var(--orange); background:#fff; font-size:11pt; font-weight:700; }
+.dark .callout { background:#191919; }
+.orange .callout { border-left-color:#080808; background:#fff8; }
+.small { font-size:8.7pt; }
+.tiny { font-size:7.8pt; }
+.stack { display:grid; gap:4mm; margin-top:5mm; }
+.step { display:grid; grid-template-columns:10mm 1fr; gap:3mm; padding:3.5mm 0; border-bottom:1px solid #0002; }
+.step b { color:var(--orange); font-family:Manrope,Arial,sans-serif; font-size:13pt; }
+.step p { margin:0; }
+.dark .step { border-color:#fff3; }
+.two-col { display:grid; grid-template-columns:1fr 1fr; gap:5mm; margin-top:6mm; }
+.card { padding:5mm; border-radius:5mm; background:#fff; }
+.dark .card { background:#191919; }
+.card p:last-child { margin-bottom:0; }
+.page.compact .card { padding:4mm; }
+.number-box { display:inline-grid; place-items:center; min-width:15mm; height:15mm; border-radius:50%; background:var(--orange); font-family:Manrope,Arial,sans-serif; font-size:16pt; font-weight:800; }
+.big { font-size:21pt; line-height:1.15; font-weight:800; }
+.display { font-family:Manrope,Arial,sans-serif; font-size:28pt; line-height:1.08; font-weight:800; letter-spacing:-.045em; }
+.sequence { display:flex; align-items:center; justify-content:space-between; gap:2mm; margin:8mm 0; font-family:Manrope,Arial,sans-serif; font-size:22pt; font-weight:800; }
+.sequence span { color:var(--orange); }
+.timeline { display:flex; justify-content:space-between; align-items:center; margin:7mm 0; padding:5mm 0; border-top:2px solid var(--orange); border-bottom:2px solid var(--orange); font-family:Manrope,Arial,sans-serif; font-size:17pt; font-weight:800; }
+.timeline span { color:var(--orange); }
+.strings { display:grid; gap:2mm; margin:7mm auto; width:52mm; text-align:center; }
+.strings div { padding:1.6mm; border-radius:99px; background:#fff; color:var(--ink); font-family:Manrope,Arial,sans-serif; font-size:13pt; font-weight:800; }
+.strings div::after { content:"↓"; display:block; position:relative; height:0; top:1.5mm; color:var(--orange); font-size:12pt; }
+.strings div:last-child::after { content:""; }
+.diagram-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:4mm; margin-top:5mm; }
+.diagram-grid.three { grid-template-columns:repeat(3,1fr); gap:2mm; }
+.diagram-grid img { display:block; width:100%; }
+.diagram-grid.three img { width:100%; }
+.exercise-list { margin:5mm 0; padding-left:6mm; font-size:10.5pt; }
+.exercise-list li { padding:2mm 0; }
+.practice-table { width:100%; margin-top:6mm; border-collapse:collapse; font-size:8.2pt; }
+.practice-table th,.practice-table td { border:1px solid #888; padding:3mm 2mm; text-align:left; }
+.practice-table th { background:#080808; color:#fff; }
+.practice-table td { height:11mm; }
+.check { display:flex; gap:3mm; margin:3mm 0; font-size:10pt; }
+.check::before { content:"□"; color:var(--orange); font-size:15pt; line-height:1; }
+.cover { display:flex; flex-direction:column; justify-content:space-between; padding-top:12mm; }
+.cover .mark { width:42mm; margin-top:6mm; }
+.cover .super { color:var(--orange); font-size:12pt; font-weight:800; letter-spacing:.14em; }
+.cover h1 { margin:5mm 0; color:#fff; font-size:37pt; }
+.cover .subtitle { max-width:110mm; color:#ccc; font-size:14pt; }
+.cover .signature { padding-top:5mm; border-top:1px solid #fff4; font-size:10pt; }
+.cover .shape { position:absolute; right:-22mm; top:20mm; width:65mm; height:110mm; border:10mm solid var(--orange); border-radius:50%; opacity:.15; transform:rotate(-22deg); }
+.qr { width:42mm; height:42mm; display:block; margin:6mm auto 3mm; image-rendering:pixelated; background:#fff; padding:2mm; }
+.button { display:block; width:max-content; max-width:100%; margin:4mm auto; padding:3.5mm 6mm; border-radius:99px; background:var(--orange); color:#080808; font-size:10pt; font-weight:800; text-decoration:none; }
+.community { text-align:center; }
+.community .eyebrow { margin-top:11mm; }
+.community h2 { font-size:29pt; }
+.footer-line { position:absolute; left:13mm; bottom:12mm; font-size:8pt; font-weight:700; }
+@media screen and (max-width:600px) { .page { width:100%; height:auto; min-height:210mm; margin:0 0 8px; padding:28px 24px 42px; } h1 { font-size:32pt; } h2 { font-size:24pt; } }
+@media print { @page { size:A5; margin:0; } html { background:#fff; } .page { margin:0; box-shadow:none; print-color-adjust:exact; -webkit-print-color-adjust:exact; } }

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Guia de Bolso Troca de Acordes, Oficina do Violão">
+ <rect width="1200" height="630" fill="#080808"/><path d="M0 560H1200" stroke="#ff5600" stroke-width="18"/>
+ <text x="80" y="105" fill="#ff5600" font-family="Manrope,Arial,sans-serif" font-size="31" font-weight="800" letter-spacing="4">OFICINA DO VIOLÃO · GUIA DE BOLSO</text>
+ <text x="78" y="275" fill="#f0f1f2" font-family="Manrope,Arial,sans-serif" font-size="91" font-weight="800" letter-spacing="-5">TROCA DE</text>
+ <text x="78" y="374" fill="#ff5600" font-family="Manrope,Arial,sans-serif" font-size="91" font-weight="800" letter-spacing="-5">ACORDES</text>
+ <text x="82" y="462" fill="#ccc" font-family="DM Sans,Arial,sans-serif" font-size="31">Exercícios práticos para parar de travar</text>
+ <text x="82" y="504" fill="#ccc" font-family="DM Sans,Arial,sans-serif" font-size="31">entre um acorde e outro.</text>
+ <circle cx="1030" cy="290" r="84" fill="#ff5600"/><text x="1030" y="311" text-anchor="middle" fill="#080808" font-family="Manrope,Arial,sans-serif" font-size="56" font-weight="800">G→D</text>
+</svg>

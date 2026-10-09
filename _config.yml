@@ -1,0 +1,10 @@
+# O PDF pago e seus arquivos de produção não devem ser publicados pelo GitHub Pages.
+exclude:
+  - guia-troca-acordes/ebook
+  - guia-troca-acordes/diagramas
+  - guia-troca-acordes/tools
+  - guia-troca-acordes/README.md
+  - guia-acordes-sequencia/ebook
+  - guia-acordes-sequencia/diagramas
+  - guia-acordes-sequencia/tools
+  - guia-acordes-sequencia/README.md
