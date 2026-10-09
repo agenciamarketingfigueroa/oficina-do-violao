@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Pratique violão com o metrônomo da Oficina: ajuste o BPM, escolha o compasso e marque os tempos acentuados." />
+    <title>Metrônomo — Oficina do Violão</title>
+    <link rel="icon" type="image/png" href="../../assets/img/logo-square.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../flashcards/flashcards.css" />
+    <link rel="stylesheet" href="../ritmo/ritmo.css" />
+    <script defer src="../../script.js"></script>
+    <script defer src="../ritmo/tempo.js"></script>
+    <script defer src="metronomo.js"></script>
+  </head>
+  <body class="practice-page rhythm-page">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header scrolled" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="../../" aria-label="Oficina do Violão — início"><img class="logo-horizontal" src="../../assets/img/logo-horizontal.png" alt="Oficina do Violão" width="300" height="60" /></a>
+        <nav class="desktop-nav" aria-label="Navegação principal">
+          <a href="../../#como-funciona">Como funciona</a>
+          <a href="../../#caminho">Seu caminho</a>
+          <a href="../" aria-current="location">Praticar</a>
+          <a href="../../#faq">Dúvidas</a>
+        </nav>
+        <a class="button button-small button-outline header-cta" href="../../#turma">Entrar na lista</a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle><span></span><span></span></button>
+      </div>
+      <nav class="mobile-nav" aria-label="Navegação mobile" data-mobile-nav>
+        <a href="../../#como-funciona">Como funciona</a>
+        <a href="../../#caminho">Seu caminho</a>
+        <a href="../" aria-current="location">Praticar</a>
+        <a href="../../#faq">Dúvidas</a>
+        <a href="../../#turma">Entrar na lista</a>
+      </nav>
+    </header>
+
+    <main id="conteudo" class="practice-main">
+      <div class="container practice-shell rhythm-shell">
+        <p class="eyebrow"><span></span> Ritmo • Oficina do Violão</p>
+        <h1>Pratique no pulso<span class="accent">.</span></h1>
+        <p class="practice-lead">Ajuste o tempo e marque os cliques que você quer destacar no compasso.</p>
+        <section class="rhythm-panel rhythm-metronome" aria-labelledby="metronome-title">
+          <p class="section-kicker">Ferramenta 04 / Ritmo</p>
+          <h2 id="metronome-title">Metrônomo</h2>
+          <p class="rhythm-intro">Escolha o BPM e a fórmula de compasso. O som começa quando você apertar Iniciar.</p>
+          <div class="rhythm-settings">
+            <div class="rhythm-bpm-setting">
+              <label for="rhythm-bpm">BPM</label>
+              <div class="rhythm-bpm-controls">
+                <button type="button" data-bpm-down aria-label="Diminuir 1 BPM">−</button>
+                <input id="rhythm-bpm" data-bpm type="number" min="30" max="300" step="1" value="80" inputmode="numeric" />
+                <button type="button" data-bpm-up aria-label="Aumentar 1 BPM">+</button>
+              </div>
+              <input class="rhythm-bpm-range" data-bpm-range type="range" min="30" max="300" step="1" value="80" aria-label="Ajustar BPM" />
+            </div>
+            <div class="rhythm-meter-setting">
+              <label for="rhythm-meter">Fórmula de compasso</label>
+              <select id="rhythm-meter" data-meter>
+                <option value="2/4">2/4</option>
+                <option value="3/4">3/4</option>
+                <option value="4/4" selected>4/4</option>
+                <option value="5/4">5/4</option>
+                <option value="6/8">6/8</option>
+                <option value="7/8">7/8</option>
+              </select>
+            </div>
+          </div>
+          <p class="rhythm-unit" data-unit>No 4/4, cada clique representa uma semínima.</p>
+          <div class="rhythm-accent-setting">
+            <label class="rhythm-switch" for="rhythm-accent"><input id="rhythm-accent" data-accent-enabled type="checkbox" checked /><span class="rhythm-switch-track" aria-hidden="true"></span><span>Acentuar tempos</span></label>
+            <p>Clique nos números para marcar os tempos fortes. Desligue para ouvir todos os cliques iguais.</p>
+          </div>
+          <div class="rhythm-beats" role="group" aria-label="Escolher os tempos acentuados" data-beats></div>
+          <p class="rhythm-accent-message" role="status" data-accent-message>Acento no tempo 1.</p>
+          <button class="button button-primary rhythm-play" type="button" data-play>Iniciar metrônomo <span aria-hidden="true">▶</span></button>
+          <p class="rhythm-message" role="status" data-audio-status>O som começa quando você iniciar.</p>
+          <p class="rhythm-hint">Em 6/8 e 7/8, cada clique representa uma colcheia. O metrônomo para quando você sai da página.</p>
+        </section>
+        <div class="rhythm-links"><a class="button button-outline" href="../">← Todas as ferramentas</a><a class="button button-outline" href="../tap-tempo/">Descobrir BPM com Tap Tempo ↗</a></div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <img class="logo-horizontal" src="../../assets/img/logo-horizontal.png" alt="Oficina do Violão" width="300" height="60" />
+        <p>Toda semana, um próximo passo.</p>
+        <div class="footer-links"><a href="../../">Início</a><a href="../">Praticar</a><a href="../flashcards/">Flashcards</a><a href="../quiz/">Quiz</a><a href="../tap-tempo/">Tap Tempo</a></div>
+      </div>
+      <div class="container footer-bottom"><span>© <span data-year></span> Oficina do Violão</span><span>Feito para continuar.</span></div>
+    </footer>
+  </body>
+</html>

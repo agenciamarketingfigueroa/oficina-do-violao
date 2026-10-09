@@ -310,6 +310,14 @@
 .practice-placement-feature h2 { font-size: clamp(2rem, 3.5vw, 3rem); }
 .practice-placement-feature .practice-placement-meta { margin-top: 13px; color: var(--orange); font-size: 0.8rem; }
 .practice-placement-feature .button { justify-self: end; }
+.practice-metronome-feature { grid-column: span 2; border-color: rgba(255, 86, 0, .28); background: radial-gradient(circle at 90% 5%, rgba(255, 86, 0, .13), transparent 40%), var(--charcoal); }
+.practice-rhythm-preview { display: flex; align-items: center; flex-wrap: wrap; gap: 9px; }
+.practice-rhythm-preview span { width: 29px; height: 29px; display: grid; place-items: center; border: 1px solid #777; border-radius: 50%; color: #bbb; font-size: .75rem; }
+.practice-rhythm-preview .current { border-color: var(--orange); background: var(--orange); color: #111; }
+.practice-rhythm-preview strong { margin-left: 8px; color: var(--orange); font-size: .85rem; }
+.practice-tap-feature { border-color: rgba(255, 86, 0, .28); }
+.practice-tap-preview { color: var(--orange); font-family: var(--font-display); font-size: 1.45rem; font-weight: 800; letter-spacing: .12em; }
+.practice-tap-preview span { font-size: 1.8rem; }
 @media (max-width: 720px) {
   .practice-placement-feature { grid-template-columns: 1fr; }
   .practice-placement-feature .button { justify-self: stretch; }
@@ -539,6 +547,7 @@
 @media (max-width: 1100px) {
   .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .practice-quiz-feature { grid-column: span 2; }
+  .practice-tap-feature { grid-column: span 2; }
 }
 
 @media (max-width: 980px) {
@@ -565,6 +574,7 @@
   .practice-deck-card { min-height: 265px; padding: 24px; text-align: left; }
   .practice-feature { grid-column: auto; }
   .practice-quiz-feature { grid-column: auto; }
+  .practice-metronome-feature, .practice-tap-feature { grid-column: auto; }
   .practice-deck-card .button { width: 100%; }
   .practice-section-heading { text-align: left; }
   .practice-note { margin-top: 70px; }

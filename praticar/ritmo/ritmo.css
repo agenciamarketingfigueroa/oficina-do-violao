@@ -1,0 +1,55 @@
+.rhythm-shell > h1 { max-width: 1050px; }
+.rhythm-shell > .practice-lead { max-width: 750px; }
+.rhythm-panel { max-width: 780px; min-width: 0; margin-top: 45px; padding: clamp(23px, 3vw, 38px); border: 1px solid rgba(255, 86, 0, .32); border-radius: var(--radius); background: radial-gradient(circle at 95% 0, rgba(255, 86, 0, .1), transparent 46%), var(--charcoal); }
+.rhythm-panel .section-kicker { margin-bottom: 15px; }
+.rhythm-panel h2 { margin: 0 0 12px; font-size: clamp(2rem, 3.4vw, 3.1rem); line-height: 1.1; }
+.rhythm-intro { margin-bottom: 26px; color: #bbb; line-height: 1.6; }
+.rhythm-tap-button { width: 100%; min-height: 156px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; border: 1px solid var(--orange); border-radius: 17px; background: var(--orange); color: #080808; cursor: pointer; touch-action: manipulation; transition: transform .12s ease, box-shadow .12s ease; font-family: var(--font-display); font-size: 1.1rem; font-weight: 800; letter-spacing: .04em; }
+.rhythm-tap-button:hover { box-shadow: 0 16px 38px rgba(255, 86, 0, .16); }
+.rhythm-tap-button:active { transform: scale(.985); }
+.rhythm-tap-symbol { font-size: 2rem; line-height: 1; }
+.rhythm-tap-button small { font-family: var(--font-body); font-size: .72rem; font-weight: 600; letter-spacing: 0; }
+.rhythm-tap-result { display: flex; align-items: baseline; gap: 14px; margin-top: 24px; }
+.rhythm-tap-result strong { color: var(--orange); font-family: var(--font-display); font-size: clamp(3.7rem, 8vw, 6rem); line-height: 1; font-variant-numeric: tabular-nums; }
+.rhythm-tap-result span { color: #bbb; font-size: .85rem; }
+.rhythm-message { min-height: 2.5em; margin: 14px 0 20px; color: #ccc; line-height: 1.5; }
+.rhythm-tap-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.rhythm-tap-actions .button { min-width: 0; justify-content: center; }
+.rhythm-page button:disabled { opacity: .47; cursor: default; transform: none; }
+.rhythm-hint { margin: 24px 0 0; color: #929292; font-size: .8rem; line-height: 1.55; }
+.rhythm-settings { display: grid; grid-template-columns: minmax(0, 1fr) minmax(135px, .65fr); gap: 22px; align-items: start; }
+.rhythm-settings label { display: block; margin-bottom: 11px; color: var(--orange); font-size: .72rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.rhythm-bpm-controls { display: flex; min-width: 0; gap: 6px; }
+.rhythm-bpm-controls button, .rhythm-bpm-controls input, .rhythm-meter-setting select { height: 53px; border: 1px solid #555; border-radius: 9px; background: #101010; color: var(--light); font: inherit; }
+.rhythm-bpm-controls button { flex: 0 0 44px; cursor: pointer; font-size: 1.5rem; }
+.rhythm-bpm-controls button:hover { border-color: var(--orange); }
+.rhythm-bpm-controls input { width: 100%; min-width: 0; text-align: center; font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.rhythm-bpm-controls input::-webkit-outer-spin-button, .rhythm-bpm-controls input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.rhythm-bpm-controls input[type=number] { appearance: textfield; -moz-appearance: textfield; }
+.rhythm-bpm-range { width: 100%; margin: 18px 0 0; accent-color: var(--orange); cursor: pointer; }
+.rhythm-meter-setting select { width: 100%; padding: 0 12px; cursor: pointer; }
+.rhythm-unit { margin: 20px 0 18px; color: #bbb; font-size: .86rem; line-height: 1.5; }
+.rhythm-accent-setting { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-top: 20px; border-top: 1px solid var(--line); }
+.rhythm-accent-setting > p { margin: 0; color: #aaa; font-size: .83rem; line-height: 1.5; }
+.rhythm-switch { position: relative; display: inline-flex; align-items: center; gap: 11px; color: var(--light); cursor: pointer; font-weight: 700; }
+.rhythm-switch input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.rhythm-switch-track { width: 42px; height: 24px; position: relative; flex: 0 0 42px; border: 1px solid #777; border-radius: 999px; background: #444; transition: background .18s ease; }
+.rhythm-switch-track::after { content: ""; position: absolute; width: 16px; height: 16px; top: 3px; left: 3px; border-radius: 50%; background: #eee; transition: transform .18s ease; }
+.rhythm-switch input:checked + .rhythm-switch-track { border-color: var(--orange); background: var(--orange); }
+.rhythm-switch input:checked + .rhythm-switch-track::after { transform: translateX(18px); background: #111; }
+.rhythm-switch input:focus-visible + .rhythm-switch-track { outline: 3px solid var(--orange-soft); outline-offset: 4px; }
+.rhythm-beats { min-height: 72px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 11px; padding: 12px; border: 1px solid var(--line); border-radius: 14px; background: #111; }
+.rhythm-beat { width: 38px; height: 38px; display: grid; place-items: center; padding: 0; border: 1px solid #666; border-radius: 50%; background: #181818; color: #aaa; font: inherit; font-size: .83rem; font-weight: 700; font-variant-numeric: tabular-nums; cursor: pointer; transition: background .08s ease, color .08s ease, transform .08s ease; }
+.rhythm-beat:hover { border-color: var(--orange); }
+.rhythm-beat.accent-selected { border-color: var(--orange); background: #2c190e; color: var(--orange); }
+.rhythm-beats.accents-off .rhythm-beat { border-color: #666; background: #181818; color: #aaa; }
+.rhythm-beat.active { transform: scale(1.16); background: #eee; border-color: #eee; color: #111; }
+.rhythm-beat.accent-selected.active { background: var(--orange); border-color: var(--orange); color: #111; }
+.rhythm-beats.accents-off .rhythm-beat.active { background: #eee; border-color: #eee; color: #111; }
+.rhythm-accent-message { margin: 12px 0 0; color: #bbb; font-size: .85rem; }
+.rhythm-play { width: 100%; justify-content: center; margin-top: 20px; }
+.rhythm-metronome .rhythm-message { margin-bottom: 0; }
+.rhythm-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
+.rhythm-page :is(input, select):focus-visible { outline: 3px solid var(--orange-soft); outline-offset: 3px; }
+@media (max-width: 520px) { .rhythm-panel { margin-top: 34px; } .rhythm-settings { grid-template-columns: 1fr; gap: 15px; } .rhythm-tap-actions, .rhythm-links { display: grid; } .rhythm-tap-actions .button, .rhythm-links .button { width: 100%; } .rhythm-beats { gap: 8px; } .rhythm-beat { width: 34px; height: 34px; } }
+@media (prefers-reduced-motion: reduce) { .rhythm-tap-button, .rhythm-beat, .rhythm-switch-track, .rhythm-switch-track::after { transition: none; } .rhythm-beat.active { transform: none; } }
