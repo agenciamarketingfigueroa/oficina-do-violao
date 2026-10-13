@@ -1,0 +1,105 @@
+body{background:#080808;color:var(--light)}
+.vac-header{position:relative;z-index:20;border-bottom:1px solid #ffffff26;background:#080808}
+.vac-header-inner{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.vac-header img,.vac-footer img{width:190px;height:auto}
+.vac-header-right{display:flex;align-items:center;gap:30px}
+.vac-header-right>span{color:#aaa;font-size:.68rem;font-weight:800;letter-spacing:.14em;white-space:nowrap}
+.vac-header-right>a{display:inline-flex;align-items:center;gap:14px;padding:12px 19px;border-radius:999px;background:var(--orange);color:#080808;font-size:.72rem;font-weight:800;letter-spacing:.05em;white-space:nowrap;transition:transform .2s ease,background .2s ease}
+.vac-header-right>a:hover{transform:translateY(-2px);background:#ff7a38}
+.vac-hero{position:relative;min-height:700px;display:flex;align-items:center;overflow:hidden;background:#080808}
+.vac-hero-photo{position:absolute;inset:0;background-image:linear-gradient(90deg,#080808 0%,#080808f2 27%,#080808b5 48%,#08080828 76%,#08080814 100%),linear-gradient(0deg,#080808 0%,transparent 28%),url("cena-ferias-limpa.webp");background-size:cover;background-position:center 54%}
+.vac-hero-content{position:relative;z-index:1;padding-block:85px 65px}
+.vac-eyebrow{margin:0 0 16px;color:var(--orange);font-size:.72rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+.vac-hero h1,.vac-section h2,.vac-final h2{font-family:var(--font-display);font-weight:800;letter-spacing:-.055em;line-height:1.055}
+.vac-hero h1{max-width:760px;margin:0 0 20px;font-size:clamp(3.2rem,5.6vw,5.8rem)}
+.vac-hero h1 em,.vac-section h2 em,.vac-final h2 em{color:var(--orange);font-style:normal}
+.vac-lead{max-width:595px;color:#ddd;font-size:1.08rem;line-height:1.62}
+.vac-hero-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:29px}
+.vac-button{display:inline-flex;justify-content:center;align-items:center;gap:16px;max-width:100%;padding:15px 22px;font-size:.76rem;letter-spacing:.035em;text-align:center}
+.vac-hero-actions p{margin:0;color:#e6e6e6;font-size:.83rem;white-space:nowrap}
+.vac-hero-actions p strong{color:#fff;font-size:1.05rem}
+.vac-hero-actions p span{margin:0 5px;color:#aaa}
+.vac-hero-facts{display:flex;gap:22px;flex-wrap:wrap;margin-top:62px;padding-top:17px;border-top:1px solid #ffffff65;max-width:830px}
+.vac-hero-facts span{color:#e4e1df;font-size:.64rem;font-weight:800;letter-spacing:.09em}
+.vac-section{padding:100px 0}
+.vac-section h2{max-width:850px;margin:0 0 26px;font-size:clamp(2.7rem,4.7vw,5rem)}
+.vac-problem{background:var(--light);color:#080808}
+.vac-problem h2 em{color:var(--orange)}
+.vac-intro{max-width:720px;color:#595959;font-size:1.07rem}
+.vac-problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:37px}
+.vac-problem-grid article{min-height:240px;padding:28px;border:1px solid #d8d8d8;border-radius:var(--radius);background:#fff}
+.vac-problem-grid span{color:var(--orange);font-size:.78rem;font-weight:800}
+.vac-problem-grid h3{margin:32px 0 11px;font-size:1.35rem;line-height:1.12}
+.vac-problem-grid p{margin:0;color:#555;font-size:.9rem}
+.vac-problem-end{margin-top:32px;font-family:var(--font-display);font-size:clamp(1.45rem,2.5vw,2.4rem);font-weight:800;letter-spacing:-.045em}
+.vac-route{background:#0e0e0e}
+.vac-route-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:90px;align-items:center}
+.vac-route-grid>div>p:not(.vac-eyebrow){max-width:590px;color:#aaa;font-size:1.02rem}
+.vac-text-link{display:inline-flex;gap:18px;margin-top:12px;padding-bottom:7px;border-bottom:2px solid var(--orange);color:var(--orange);font-size:.84rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+.vac-route-steps{border-top:1px solid #ffffff36}
+.vac-route-steps>div{display:grid;grid-template-columns:52px 1fr;gap:7px 17px;padding:25px 0;border-bottom:1px solid #ffffff36}
+.vac-route-steps b{grid-row:span 2;color:var(--orange);font-family:var(--font-display);font-size:1.2rem}
+.vac-route-steps span{font-size:.79rem;font-weight:800;letter-spacing:.1em}
+.vac-route-steps p{margin:0;color:#aaa;font-size:.88rem}
+.vac-inside{background:var(--light);color:#080808}
+.vac-inside-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:76px;align-items:center}
+.vac-preview{padding:20px;border-radius:22px;background:#d4d4d4;box-shadow:0 22px 45px #0002}
+.vac-preview-screen{position:relative;aspect-ratio:16/10;overflow:hidden;border-radius:11px;background-image:linear-gradient(0deg,#000d,transparent 54%),url("cena-ferias-limpa.webp");background-size:cover;background-position:70% center;color:#fff}
+.vac-preview-top,.vac-preview-bottom{position:absolute;left:25px;right:25px;display:flex;justify-content:space-between;gap:10px}
+.vac-preview-top{top:21px;font-size:.62rem;font-weight:800;letter-spacing:.14em}
+.vac-preview-bottom{bottom:20px;align-items:end}
+.vac-preview-bottom strong{font-family:var(--font-display);font-size:clamp(1.7rem,3vw,2.9rem);line-height:1;letter-spacing:-.05em}
+.vac-preview-bottom em{color:var(--orange);font-style:normal}
+.vac-preview-bottom span{font-size:.7rem;font-weight:800;white-space:nowrap}
+.vac-inside-copy>p:not(.vac-eyebrow){color:#4e4e4e}
+.vac-inside-copy strong{color:#080808}
+.vac-inside-copy ul,.vac-price-card ul{list-style:none;margin:24px 0;padding:0}
+.vac-inside-copy li{position:relative;padding:11px 0 11px 30px;border-top:1px solid #ccc;font-size:.94rem}
+.vac-inside-copy li:last-child{border-bottom:1px solid #ccc}
+.vac-inside-copy li::before,.vac-price-card li::before{content:'✓';position:absolute;left:0;color:var(--orange);font-weight:800}
+.vac-inside-copy .vac-small{font-size:.78rem;color:#777!important}
+.vac-scene{position:relative;overflow:hidden;background:#16110d}
+.vac-scene::before{content:'';position:absolute;inset:0;background-image:linear-gradient(90deg,#090909f5 4%,#090909d9 38%,#09090963 68%,#09090922),url("cena-ferias-limpa.webp");background-size:cover;background-position:center 63%}
+.vac-scene-inner{position:relative;min-height:470px;display:flex;align-items:center}
+.vac-scene-inner>div{max-width:760px}
+.vac-scene h2{font-size:clamp(2.7rem,4.4vw,4.7rem)}
+.vac-scene p:not(.vac-eyebrow){max-width:570px;color:#ddd}
+.vac-scene .vac-button{margin-top:14px}
+.vac-teacher{background:#101010}
+.vac-teacher-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:70px;align-items:center}
+.vac-teacher img{width:100%;height:350px;object-fit:cover;object-position:62% center;border-radius:var(--radius)}
+.vac-teacher p:not(.vac-eyebrow){max-width:550px;color:#aaa}
+.vac-offer{background:var(--orange);color:#080808}
+.vac-offer-grid{display:grid;grid-template-columns:1fr .9fr;gap:75px;align-items:center}
+.vac-offer .vac-eyebrow{color:#080808}
+.vac-offer h2 em{color:#fff}
+.vac-offer-grid>div:first-child>p:last-child{max-width:470px;font-size:1.08rem}
+.vac-price-card{padding:35px;border-radius:24px;background:#f3f1ed;box-shadow:15px 15px 0 #0002}
+.vac-price-card>span{color:#b94300;font-size:.74rem;font-weight:800;letter-spacing:.12em}
+.vac-price-card>p:first-of-type{margin:15px 0 0;color:#555;font-size:.85rem}
+.vac-price{font-family:var(--font-display);font-size:clamp(4.8rem,7vw,7rem);font-weight:800;letter-spacing:-.08em;line-height:1.05}
+.vac-installments{margin:0 0 24px;color:#565656;font-size:.95rem}
+.vac-installments strong{color:#080808}
+.vac-price-card ul{padding:16px 0 0;border-top:1px solid #c9c6c0}
+.vac-price-card li{position:relative;padding:6px 0 6px 27px;font-size:.9rem}
+.vac-price-card .vac-button{width:100%}
+.vac-price-card small{display:block;margin-top:13px;color:#666;font-size:.72rem;text-align:center}
+.vac-faq{background:var(--light);color:#080808}
+.vac-faq-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:70px}
+.vac-faq details{border-top:1px solid #ccc}
+.vac-faq details:last-child{border-bottom:1px solid #ccc}
+.vac-faq summary{position:relative;padding:22px 32px 22px 0;cursor:pointer;font-family:var(--font-display);font-weight:700;list-style:none}
+.vac-faq summary::-webkit-details-marker{display:none}
+.vac-faq summary::after{content:'+';position:absolute;right:4px;top:17px;color:var(--orange);font-size:1.5rem}
+.vac-faq details[open] summary::after{content:'−'}
+.vac-faq details p{margin:0;padding:0 15px 19px 0;color:#555;font-size:.91rem}
+.vac-final{padding:100px 0;text-align:center;background:#080808}
+.vac-final p{color:var(--orange);font-size:.75rem;font-weight:800;letter-spacing:.17em}
+.vac-final h2{max-width:800px;margin:17px auto 28px;font-size:clamp(2.65rem,4.7vw,5rem)}
+.vac-footer{border-top:1px solid #292929;padding:38px 0;background:#080808}
+.vac-footer .container{display:flex;align-items:center;gap:23px}
+.vac-footer p{margin:0 auto 0 0;color:#999;font-size:.8rem}
+.vac-footer a{color:#bbb;font-size:.8rem}
+@media(max-width:980px){.vac-route-grid,.vac-inside-grid,.vac-offer-grid{gap:35px}.vac-hero h1{max-width:670px}.vac-hero-photo{background-position:58% center}}
+@media(max-width:700px){.vac-header-inner{min-height:64px}.vac-header img{width:158px}.vac-header-right>span{display:none}.vac-header-right>a{padding:9px 14px;font-size:.65rem}.vac-hero{min-height:0}.vac-hero-photo{background-image:linear-gradient(0deg,#080808 1%,#080808e8 30%,#0808089e 62%,#08080857 100%),url("cena-ferias-limpa.webp");background-position:67% center}.vac-hero-content{padding-block:70px 36px}.vac-hero h1{font-size:clamp(2.55rem,9vw,4.1rem)}.vac-lead{font-size:.98rem}.vac-hero-actions{gap:13px}.vac-hero-actions .vac-button{width:100%}.vac-hero-facts{margin-top:43px;gap:9px 18px}.vac-section{padding:63px 0}.vac-section h2{font-size:clamp(2.25rem,8vw,3.45rem)}.vac-problem-grid,.vac-route-grid,.vac-inside-grid,.vac-teacher-grid,.vac-offer-grid,.vac-faq-grid{grid-template-columns:1fr;gap:28px}.vac-problem-grid article{min-height:0}.vac-problem-grid h3{margin-top:17px}.vac-route-steps{margin-top:12px}.vac-teacher img{height:260px}.vac-scene-inner{min-height:425px}.vac-final{padding:75px 0}.vac-footer .container{flex-wrap:wrap}.vac-footer p{margin-right:0}}
+@media(max-width:430px){.vac-header-right>a{font-size:.58rem;gap:6px}.vac-hero h1{font-size:2.42rem}.vac-hero-actions p{white-space:normal}.vac-hero-facts span{font-size:.58rem}.vac-price-card{padding:25px}.vac-price{font-size:4.8rem}.vac-preview{padding:10px}.vac-preview-top,.vac-preview-bottom{left:14px;right:14px}.vac-preview-bottom strong{font-size:1.7rem}}
