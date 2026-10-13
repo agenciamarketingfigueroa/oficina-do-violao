@@ -12,3 +12,9 @@ exclude:
   - praticar/quiz/README.md
   - praticar/nivelador/README.md
   - praticar/ritmo/README.md
+  - ebook-cuidados-violao
+  - output
+  - hotmart-assets
+  - de-ferias-com-o-violao/tools
+  - de-ferias-com-o-violao/README.md
+  - de-ferias-com-o-violao/assets/cena-ferias-limpa.png

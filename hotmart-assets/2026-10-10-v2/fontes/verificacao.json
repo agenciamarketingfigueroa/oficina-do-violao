@@ -1,0 +1,714 @@
+[
+  {
+    "file": "de-ferias-com-o-violao/imagem-produto-600x600.jpg",
+    "width": 600,
+    "height": 600,
+    "bytes": 78358,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 114,
+        "y": 108,
+        "w": 372,
+        "h": 384
+      }
+    }
+  },
+  {
+    "file": "de-ferias-com-o-violao/avatar-vitrine-600x600.jpg",
+    "width": 600,
+    "height": 600,
+    "bytes": 74044,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 114,
+        "y": 108,
+        "w": 372,
+        "h": 384
+      }
+    }
+  },
+  {
+    "file": "de-ferias-com-o-violao/banner-produto-1920x640.jpg",
+    "width": 1920,
+    "height": 640,
+    "bytes": 166195,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 403.1875,
+        "y": 115.1875,
+        "w": 1113.625,
+        "h": 409.625
+      }
+    }
+  },
+  {
+    "file": "de-ferias-com-o-violao/banner-vitrine-desktop-1920x800.jpg",
+    "width": 1920,
+    "height": 800,
+    "bytes": 203550,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 403.1875,
+        "y": 144,
+        "w": 1113.625,
+        "h": 512
+      }
+    }
+  },
+  {
+    "file": "de-ferias-com-o-violao/banner-vitrine-mobile-720x960.jpg",
+    "width": 720,
+    "height": 960,
+    "bytes": 114437,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 122.390625,
+        "y": 172.796875,
+        "w": 475.21875,
+        "h": 614.40625
+      }
+    }
+  },
+  {
+    "file": "de-ferias-com-o-violao/capa-vitrine-horizontal-1920x1080.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 275998,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 403.1875,
+        "y": 194.390625,
+        "w": 1113.625,
+        "h": 691.21875
+      }
+    }
+  },
+  {
+    "file": "de-ferias-com-o-violao/capa-vitrine-vertical-720x1040.jpg",
+    "width": 720,
+    "height": 1040,
+    "bytes": 117474,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 122.390625,
+        "y": 187.1875,
+        "w": 475.21875,
+        "h": 665.625
+      }
+    }
+  },
+  {
+    "file": "de-ferias-com-o-violao/capa-modulo-1920x1080.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 275998,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 403.1875,
+        "y": 194.390625,
+        "w": 1113.625,
+        "h": 691.21875
+      }
+    }
+  },
+  {
+    "file": "de-ferias-com-o-violao/capa-trilha-720x1040.jpg",
+    "width": 720,
+    "height": 1040,
+    "bytes": 117474,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 122.390625,
+        "y": 187.1875,
+        "w": 475.21875,
+        "h": 665.625
+      }
+    }
+  },
+  {
+    "file": "de-ferias-com-o-violao/fundo-login-2912x2160.jpg",
+    "width": 2912,
+    "height": 2160,
+    "bytes": 450326,
+    "qa": {
+      "safe": true
+    }
+  },
+  {
+    "file": "troca-de-acordes/imagem-produto-600x600.jpg",
+    "width": 600,
+    "height": 600,
+    "bytes": 68312,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 114,
+        "y": 108,
+        "w": 372,
+        "h": 384
+      }
+    }
+  },
+  {
+    "file": "troca-de-acordes/avatar-vitrine-600x600.jpg",
+    "width": 600,
+    "height": 600,
+    "bytes": 62492,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 114,
+        "y": 108,
+        "w": 372,
+        "h": 384
+      }
+    }
+  },
+  {
+    "file": "troca-de-acordes/banner-produto-1920x640.jpg",
+    "width": 1920,
+    "height": 640,
+    "bytes": 167459,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 403.1875,
+        "y": 115.1875,
+        "w": 1113.625,
+        "h": 409.625
+      }
+    }
+  },
+  {
+    "file": "troca-de-acordes/banner-vitrine-desktop-1920x800.jpg",
+    "width": 1920,
+    "height": 800,
+    "bytes": 210794,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 403.1875,
+        "y": 144,
+        "w": 1113.625,
+        "h": 512
+      }
+    }
+  },
+  {
+    "file": "troca-de-acordes/banner-vitrine-mobile-720x960.jpg",
+    "width": 720,
+    "height": 960,
+    "bytes": 105426,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 122.390625,
+        "y": 172.796875,
+        "w": 475.21875,
+        "h": 614.40625
+      }
+    }
+  },
+  {
+    "file": "troca-de-acordes/capa-vitrine-horizontal-1920x1080.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 267608,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 403.1875,
+        "y": 194.390625,
+        "w": 1113.625,
+        "h": 691.21875
+      }
+    }
+  },
+  {
+    "file": "troca-de-acordes/capa-vitrine-vertical-720x1040.jpg",
+    "width": 720,
+    "height": 1040,
+    "bytes": 110015,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 122.390625,
+        "y": 187.1875,
+        "w": 475.21875,
+        "h": 665.625
+      }
+    }
+  },
+  {
+    "file": "troca-de-acordes/capa-modulo-1920x1080.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 267608,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 403.1875,
+        "y": 194.390625,
+        "w": 1113.625,
+        "h": 691.21875
+      }
+    }
+  },
+  {
+    "file": "troca-de-acordes/capa-trilha-720x1040.jpg",
+    "width": 720,
+    "height": 1040,
+    "bytes": 110015,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 122.390625,
+        "y": 187.1875,
+        "w": 475.21875,
+        "h": 665.625
+      }
+    }
+  },
+  {
+    "file": "troca-de-acordes/fundo-login-2912x2160.jpg",
+    "width": 2912,
+    "height": 2160,
+    "bytes": 454924,
+    "qa": {
+      "safe": true
+    }
+  },
+  {
+    "file": "acordes-em-sequencia/imagem-produto-600x600.jpg",
+    "width": 600,
+    "height": 600,
+    "bytes": 61007,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 114,
+        "y": 108,
+        "w": 372,
+        "h": 384
+      }
+    }
+  },
+  {
+    "file": "acordes-em-sequencia/avatar-vitrine-600x600.jpg",
+    "width": 600,
+    "height": 600,
+    "bytes": 56265,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 114,
+        "y": 108,
+        "w": 372,
+        "h": 384
+      }
+    }
+  },
+  {
+    "file": "acordes-em-sequencia/banner-produto-1920x640.jpg",
+    "width": 1920,
+    "height": 640,
+    "bytes": 166021,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 403.1875,
+        "y": 115.1875,
+        "w": 1113.625,
+        "h": 409.625
+      }
+    }
+  },
+  {
+    "file": "acordes-em-sequencia/banner-vitrine-desktop-1920x800.jpg",
+    "width": 1920,
+    "height": 800,
+    "bytes": 194724,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 403.1875,
+        "y": 144,
+        "w": 1113.625,
+        "h": 512
+      }
+    }
+  },
+  {
+    "file": "acordes-em-sequencia/banner-vitrine-mobile-720x960.jpg",
+    "width": 720,
+    "height": 960,
+    "bytes": 92138,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 122.390625,
+        "y": 172.796875,
+        "w": 475.21875,
+        "h": 614.40625
+      }
+    }
+  },
+  {
+    "file": "acordes-em-sequencia/capa-vitrine-horizontal-1920x1080.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 241420,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 403.1875,
+        "y": 194.390625,
+        "w": 1113.625,
+        "h": 691.21875
+      }
+    }
+  },
+  {
+    "file": "acordes-em-sequencia/capa-vitrine-vertical-720x1040.jpg",
+    "width": 720,
+    "height": 1040,
+    "bytes": 96353,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 122.390625,
+        "y": 187.1875,
+        "w": 475.21875,
+        "h": 665.625
+      }
+    }
+  },
+  {
+    "file": "acordes-em-sequencia/capa-modulo-1920x1080.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 241420,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 403.1875,
+        "y": 194.390625,
+        "w": 1113.625,
+        "h": 691.21875
+      }
+    }
+  },
+  {
+    "file": "acordes-em-sequencia/capa-trilha-720x1040.jpg",
+    "width": 720,
+    "height": 1040,
+    "bytes": 96353,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 122.390625,
+        "y": 187.1875,
+        "w": 475.21875,
+        "h": 665.625
+      }
+    }
+  },
+  {
+    "file": "acordes-em-sequencia/fundo-login-2912x2160.jpg",
+    "width": 2912,
+    "height": 2160,
+    "bytes": 355375,
+    "qa": {
+      "safe": true
+    }
+  },
+  {
+    "file": "violao-bem-cuidado/imagem-produto-600x600.jpg",
+    "width": 600,
+    "height": 600,
+    "bytes": 65115,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 114,
+        "y": 108,
+        "w": 372,
+        "h": 384
+      }
+    }
+  },
+  {
+    "file": "violao-bem-cuidado/avatar-vitrine-600x600.jpg",
+    "width": 600,
+    "height": 600,
+    "bytes": 60753,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 114,
+        "y": 108,
+        "w": 372,
+        "h": 384
+      }
+    }
+  },
+  {
+    "file": "violao-bem-cuidado/banner-produto-1920x640.jpg",
+    "width": 1920,
+    "height": 640,
+    "bytes": 183401,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 403.1875,
+        "y": 115.1875,
+        "w": 1113.625,
+        "h": 409.625
+      }
+    }
+  },
+  {
+    "file": "violao-bem-cuidado/banner-vitrine-desktop-1920x800.jpg",
+    "width": 1920,
+    "height": 800,
+    "bytes": 221555,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 403.1875,
+        "y": 144,
+        "w": 1113.625,
+        "h": 512
+      }
+    }
+  },
+  {
+    "file": "violao-bem-cuidado/banner-vitrine-mobile-720x960.jpg",
+    "width": 720,
+    "height": 960,
+    "bytes": 106571,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 122.390625,
+        "y": 172.796875,
+        "w": 475.21875,
+        "h": 614.40625
+      }
+    }
+  },
+  {
+    "file": "violao-bem-cuidado/capa-vitrine-horizontal-1920x1080.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 271776,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 403.1875,
+        "y": 194.390625,
+        "w": 1113.625,
+        "h": 691.21875
+      }
+    }
+  },
+  {
+    "file": "violao-bem-cuidado/capa-vitrine-vertical-720x1040.jpg",
+    "width": 720,
+    "height": 1040,
+    "bytes": 113005,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 122.390625,
+        "y": 187.1875,
+        "w": 475.21875,
+        "h": 665.625
+      }
+    }
+  },
+  {
+    "file": "violao-bem-cuidado/capa-modulo-1920x1080.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 271776,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 403.1875,
+        "y": 194.390625,
+        "w": 1113.625,
+        "h": 691.21875
+      }
+    }
+  },
+  {
+    "file": "violao-bem-cuidado/capa-trilha-720x1040.jpg",
+    "width": 720,
+    "height": 1040,
+    "bytes": 113005,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 122.390625,
+        "y": 187.1875,
+        "w": 475.21875,
+        "h": 665.625
+      }
+    }
+  },
+  {
+    "file": "violao-bem-cuidado/fundo-login-2912x2160.jpg",
+    "width": 2912,
+    "height": 2160,
+    "bytes": 461226,
+    "qa": {
+      "safe": true
+    }
+  },
+  {
+    "file": "_area-de-membros/logo-cabecalho-tema-claro-180x48.png",
+    "width": 180,
+    "height": 48,
+    "bytes": 3117,
+    "qa": {
+      "safe": true
+    }
+  },
+  {
+    "file": "_area-de-membros/logo-cabecalho-tema-escuro-180x48.png",
+    "width": 180,
+    "height": 48,
+    "bytes": 3273,
+    "qa": {
+      "safe": true
+    }
+  },
+  {
+    "file": "_area-de-membros/fundo-login-2912x2160.jpg",
+    "width": 2912,
+    "height": 2160,
+    "bytes": 454924,
+    "qa": {
+      "safe": true
+    }
+  },
+  {
+    "file": "_area-de-membros/banner-tres-ebooks-desktop-1920x800.jpg",
+    "width": 1920,
+    "height": 800,
+    "bytes": 225603,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 403.1875,
+        "y": 144,
+        "w": 1113.625,
+        "h": 512
+      }
+    }
+  },
+  {
+    "file": "_area-de-membros/banner-tres-ebooks-mobile-720x960.jpg",
+    "width": 720,
+    "height": 960,
+    "bytes": 109959,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 122.390625,
+        "y": 172.796875,
+        "w": 475.21875,
+        "h": 614.40625
+      }
+    }
+  },
+  {
+    "file": "_area-de-membros/banner-todos-produtos-desktop-1920x800.jpg",
+    "width": 1920,
+    "height": 800,
+    "bytes": 215233,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 403.1875,
+        "y": 144,
+        "w": 1113.625,
+        "h": 512
+      }
+    }
+  },
+  {
+    "file": "_area-de-membros/banner-todos-produtos-mobile-720x960.jpg",
+    "width": 720,
+    "height": 960,
+    "bytes": 107328,
+    "qa": {
+      "safe": true,
+      "bad": [],
+      "box": {
+        "x": 122.390625,
+        "y": 172.796875,
+        "w": 475.21875,
+        "h": 614.40625
+      }
+    }
+  },
+  {
+    "file": "whatsapp/DFV-grupo-whatsapp-1080x1080.png",
+    "width": 1080,
+    "height": 1080,
+    "bytes": 1506625,
+    "qa": {
+      "circle": "ver prévia"
+    }
+  }
+]

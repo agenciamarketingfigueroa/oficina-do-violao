@@ -1,0 +1,11 @@
+.student-login { max-width: 640px; }
+.student-public-link { color: var(--orange); text-decoration: underline; }
+.student-form { display: grid; gap: 12px; max-width: 430px; margin-top: 36px; }
+.student-form label { font-weight: 700; color: #fff; }
+.student-form input { width: 100%; padding: 14px 16px; border: 1px solid #666; border-radius: 8px; background: #1b1b1b; color: #fff; font: inherit; }
+.student-form input:focus-visible { outline: 2px solid #ff5600; outline-offset: 2px; }
+.student-form .button { margin-top: 12px; justify-self: start; }
+.student-error { color: #ff9b72; margin: 0; }
+.student-grid { margin-top: 40px; }
+.student-logout { margin-top: 36px; padding: 10px 0; color: #fff; text-decoration: underline; background: none; border: 0; cursor: pointer; font: inherit; }
+[hidden] { display: none !important; }

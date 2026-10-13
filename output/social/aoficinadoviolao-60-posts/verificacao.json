@@ -1,0 +1,427 @@
+{
+  "count": 60,
+  "width": 1080,
+  "height": 1350,
+  "posts": [
+    {
+      "id": 1,
+      "file": "01-a-primeira-corda-e-a-mais-fina.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 2,
+      "file": "02-60-bpm-um-pulso-por-segundo.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 3,
+      "file": "03-mude-a-mao-escute-a-cor.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 4,
+      "file": "04-o-que-acontece-na-casa-12.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 5,
+      "file": "05-hoje-procure-o-baixo.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 6,
+      "file": "06-de-um-nome-a-pratica-de-hoje.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 7,
+      "file": "07-o-que-e-uma-corda-solta.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 8,
+      "file": "08-3-4-e-6-8-tem-balancos-diferentes.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 9,
+      "file": "09-capo-na-casa-2-o-que-muda.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 10,
+      "file": "10-12-cordas-6-pares.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 11,
+      "file": "11-grave-20-segundos.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 12,
+      "file": "12-por-que-la-virou-a.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 13,
+      "file": "13-seu-refrao-tem-outro-volume.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 14,
+      "file": "14-a-mesma-nota-pode-morar-em-outro-lugar.png",
+      "font": 83,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 15,
+      "file": "15-consegue-deixar-o-3-em-silencio.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 16,
+      "file": "16-polpa-ou-unha-ouca-as-duas.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 17,
+      "file": "17-na-tablatura-0-significa.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 18,
+      "file": "18-por-que-as-casas-ficam-menores.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 19,
+      "file": "19-fale-o-ritmo-da-frase.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 20,
+      "file": "20-abra-espaco-para-a-voz.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 21,
+      "file": "21-a-letra-no-visor-e-uma-pista.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 22,
+      "file": "22-duas-notas-dentro-de-um-pulso.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 23,
+      "file": "23-arpejo-o-acorde-por-partes.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 24,
+      "file": "24-o-tampo-trabalha-junto-com-a-corda.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 25,
+      "file": "25-escolha-quando-a-nota-termina.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 26,
+      "file": "26-voce-so-pratica-o-comeco.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 27,
+      "file": "27-mi-fa-si-do-um-semitom.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 28,
+      "file": "28-agudo-nao-quer-dizer-forte.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 29,
+      "file": "29-a-palheta-tambem-deixa-uma-assinatura.png",
+      "font": 83,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 30,
+      "file": "30-a-pausa-tambem-tem-duracao.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 31,
+      "file": "31-mais-notas-mesmo-andamento.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 32,
+      "file": "32-entre-sol-e-si-a-distancia-muda.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 33,
+      "file": "33-o-som-subiu-desceu-ou-repetiu.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 34,
+      "file": "34-drop-d-a-sexta-corda-vira-re.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 35,
+      "file": "35-o-e-x-dois-sinais-uteis.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 36,
+      "file": "36-tres-notas-ja-podem-virar-uma-ideia.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 37,
+      "file": "37-o-clique-forte-e-uma-referencia.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 38,
+      "file": "38-para-que-serve-o-recorte-no-corpo.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 39,
+      "file": "39-onde-sua-melodia-respira.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 40,
+      "file": "40-o-que-significa-a-440.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 41,
+      "file": "41-do-sustenido-e-re-bemol.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 42,
+      "file": "42-unissono-e-oitava-sao-diferentes.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 43,
+      "file": "43-destaque-o-2-e-o-4.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 44,
+      "file": "44-um-toque-da-mao-muda-a-duracao.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 45,
+      "file": "45-cifra-e-tablatura-mostram-coisas-diferentes.png",
+      "font": 83,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 46,
+      "file": "46-a-camera-pode-mostrar-um-detalhe.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 47,
+      "file": "47-o-que-torna-um-violao-eletroacustico.png",
+      "font": 83,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 48,
+      "file": "48-harmonico-na-casa-12.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 49,
+      "file": "49-7-8-pode-ter-mais-de-um-balanco.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 50,
+      "file": "50-faca-o-violao-responder.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 51,
+      "file": "51-baixo-cima-um-ataque-por-vez.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 52,
+      "file": "52-conheca-a-tercina.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 53,
+      "file": "53-o-tom-da-gravacao-combina-com-voce.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 54,
+      "file": "54-reconheca-as-partes-antes-de-tocar.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 55,
+      "file": "55-acorde-menor-e-sempre-triste.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 56,
+      "file": "56-a-contagem-prepara-a-entrada.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 57,
+      "file": "57-uma-nota-tem-mais-camadas-do-que-parece.png",
+      "font": 83,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 58,
+      "file": "58-a-primeira-corda-solta-e-qual-nota.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 59,
+      "file": "59-compare-dois-registros-seus.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    },
+    {
+      "id": 60,
+      "file": "60-o-que-voce-quer-entender-no-violao.png",
+      "font": 95,
+      "fontLoaded": true,
+      "overflow": []
+    }
+  ]
+}

@@ -1,5 +1,4 @@
 const product = window.PRODUCT_CONFIG;
-const trackingKeys = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "sck", "src", "fbclid"];
 
 for (const node of document.querySelectorAll("[data-price]")) {
   node.textContent = product.PRODUCT_PRICE || "Preço em definição";
@@ -14,10 +13,7 @@ try {
 
 for (const link of document.querySelectorAll("[data-checkout]")) {
   if (checkout) {
-    const target = new URL(checkout);
-    const incoming = new URLSearchParams(window.location.search);
-    for (const key of trackingKeys) if (incoming.has(key)) target.searchParams.set(key, incoming.get(key));
-    link.href = target.toString();
+    link.href = window.OficinaTracking.checkoutUrl(checkout);
   } else {
     link.addEventListener("click", (event) => {
       event.preventDefault();

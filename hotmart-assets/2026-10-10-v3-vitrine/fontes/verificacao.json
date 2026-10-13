@@ -1,0 +1,170 @@
+[
+  {
+    "product": "de-ferias-com-o-violao",
+    "file": "de-ferias-com-o-violao/capa-vitrine-horizontal-1920x1080.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 296261,
+    "titleSize": 178,
+    "copy": {
+      "x": 230.390625,
+      "y": 302.390625,
+      "width": 1267.1875,
+      "height": 648.015625
+    }
+  },
+  {
+    "product": "de-ferias-com-o-violao",
+    "file": "de-ferias-com-o-violao/capa-vitrine-vertical-720x1040.jpg",
+    "width": 720,
+    "height": 1040,
+    "bytes": 114336,
+    "titleSize": 112,
+    "copy": {
+      "x": 64.796875,
+      "y": 530.390625,
+      "width": 597.609375,
+      "height": 426.421875
+    }
+  },
+  {
+    "product": "de-ferias-com-o-violao",
+    "file": "de-ferias-com-o-violao/avatar-vitrine-600x600.jpg",
+    "width": 600,
+    "height": 600,
+    "bytes": 75254,
+    "titleSize": 66,
+    "copy": {
+      "x": 54,
+      "y": 312,
+      "width": 498,
+      "height": 246
+    }
+  },
+  {
+    "product": "troca-de-acordes",
+    "file": "troca-de-acordes/capa-vitrine-horizontal-1920x1080.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 288779,
+    "titleSize": 178,
+    "copy": {
+      "x": 230.390625,
+      "y": 302.390625,
+      "width": 1267.1875,
+      "height": 648.015625
+    }
+  },
+  {
+    "product": "troca-de-acordes",
+    "file": "troca-de-acordes/capa-vitrine-vertical-720x1040.jpg",
+    "width": 720,
+    "height": 1040,
+    "bytes": 115084,
+    "titleSize": 112,
+    "copy": {
+      "x": 64.796875,
+      "y": 530.390625,
+      "width": 597.609375,
+      "height": 426.421875
+    }
+  },
+  {
+    "product": "troca-de-acordes",
+    "file": "troca-de-acordes/avatar-vitrine-600x600.jpg",
+    "width": 600,
+    "height": 600,
+    "bytes": 69446,
+    "titleSize": 66,
+    "copy": {
+      "x": 54,
+      "y": 312,
+      "width": 498,
+      "height": 246
+    }
+  },
+  {
+    "product": "acordes-em-sequencia",
+    "file": "acordes-em-sequencia/capa-vitrine-horizontal-1920x1080.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 307873,
+    "titleSize": 178,
+    "copy": {
+      "x": 230.390625,
+      "y": 302.390625,
+      "width": 1267.1875,
+      "height": 648.015625
+    }
+  },
+  {
+    "product": "acordes-em-sequencia",
+    "file": "acordes-em-sequencia/capa-vitrine-vertical-720x1040.jpg",
+    "width": 720,
+    "height": 1040,
+    "bytes": 104692,
+    "titleSize": 112,
+    "copy": {
+      "x": 64.796875,
+      "y": 530.390625,
+      "width": 597.609375,
+      "height": 426.421875
+    }
+  },
+  {
+    "product": "acordes-em-sequencia",
+    "file": "acordes-em-sequencia/avatar-vitrine-600x600.jpg",
+    "width": 600,
+    "height": 600,
+    "bytes": 67334,
+    "titleSize": 66,
+    "copy": {
+      "x": 54,
+      "y": 312,
+      "width": 498,
+      "height": 246
+    }
+  },
+  {
+    "product": "violao-bem-cuidado",
+    "file": "violao-bem-cuidado/capa-vitrine-horizontal-1920x1080.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 297808,
+    "titleSize": 178,
+    "copy": {
+      "x": 230.390625,
+      "y": 302.390625,
+      "width": 1267.1875,
+      "height": 648.015625
+    }
+  },
+  {
+    "product": "violao-bem-cuidado",
+    "file": "violao-bem-cuidado/capa-vitrine-vertical-720x1040.jpg",
+    "width": 720,
+    "height": 1040,
+    "bytes": 120842,
+    "titleSize": 112,
+    "copy": {
+      "x": 64.796875,
+      "y": 530.390625,
+      "width": 597.609375,
+      "height": 426.421875
+    }
+  },
+  {
+    "product": "violao-bem-cuidado",
+    "file": "violao-bem-cuidado/avatar-vitrine-600x600.jpg",
+    "width": 600,
+    "height": 600,
+    "bytes": 72729,
+    "titleSize": 66,
+    "copy": {
+      "x": 54,
+      "y": 312,
+      "width": 498,
+      "height": 246
+    }
+  }
+]

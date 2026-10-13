@@ -49,6 +49,12 @@
 .rhythm-accent-message { margin: 12px 0 0; color: #bbb; font-size: .85rem; }
 .rhythm-play { width: 100%; justify-content: center; margin-top: 20px; }
 .rhythm-metronome .rhythm-message { margin-bottom: 0; }
+.rhythm-guide { max-width: 850px; margin-top: 72px; color: #ccc; line-height: 1.7; }
+.rhythm-guide h2, .rhythm-guide h3 { color: #fff; line-height: 1.2; }
+.rhythm-guide h2 { margin-bottom: 16px; font-size: clamp(1.7rem, 3vw, 2.4rem); }
+.rhythm-guide h3 { margin-top: 26px; margin-bottom: 10px; font-size: 1.25rem; }
+.rhythm-guide p { margin: 0 0 16px; }
+.rhythm-guide a { color: var(--orange); text-decoration: underline; }
 .rhythm-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
 .rhythm-page :is(input, select):focus-visible { outline: 3px solid var(--orange-soft); outline-offset: 3px; }
 @media (max-width: 520px) { .rhythm-panel { margin-top: 34px; } .rhythm-settings { grid-template-columns: 1fr; gap: 15px; } .rhythm-tap-actions, .rhythm-links { display: grid; } .rhythm-tap-actions .button, .rhythm-links .button { width: 100%; } .rhythm-beats { gap: 8px; } .rhythm-beat { width: 34px; height: 34px; } }

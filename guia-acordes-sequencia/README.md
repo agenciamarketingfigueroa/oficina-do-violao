@@ -16,12 +16,12 @@ Produto separado do Guia de Troca de Acordes. Este ensina **quais caminhos de ac
 Edite somente `config.js`:
 
 ```js
-PRODUCT_PRICE: "R$…",
+PRODUCT_PRICE: "R$ 14,90",
 CHECKOUT_URL: "https://…",
 WHATSAPP_URL: "https://chat.whatsapp.com/…",
 ```
 
-O preço aparece na primeira dobra e na oferta final. Enquanto estiver vazio, a página mostra “Preço em definição”. Enquanto o checkout estiver vazio, o botão informa que o link está em preparação. O script repassa `utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, `utm_term`, `sck`, `src` e `fbclid` ao checkout configurado. O projeto não insere IDs de Meta Pixel ou Google Analytics sem os IDs reais; a estrutura atual permite acrescentá-los depois.
+O preço aparece na primeira dobra e na oferta final. Enquanto o checkout estiver vazio, o botão informa que o link está em preparação. O script repassa `utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, `utm_term`, `sck`, `src` e `fbclid` ao checkout configurado. O Meta Pixel dos e-books (`1097022565020373`) registra `PageView` nesta página.
 
 O `_config.yml` exclui o PDF pago, o HTML fonte, os diagramas e as ferramentas da publicação no GitHub Pages. Para entregar o produto ao comprador, hospede o PDF na plataforma de checkout ou em armazenamento privado.
 

@@ -1,0 +1,607 @@
+{
+  "total": 100,
+  "priceAds": 30,
+  "gallery": "Filtros e busca conferidos",
+  "files": [
+    {
+      "id": "DFV11",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV12",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV13",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV14",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV15",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV16",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV17",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV18",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV19",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV20",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV21",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV22",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV23",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV24",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV25",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 47 à vista"
+    },
+    {
+      "id": "DFV26",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 47 à vista"
+    },
+    {
+      "id": "DFV27",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 47 à vista"
+    },
+    {
+      "id": "DFV28",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 47 à vista"
+    },
+    {
+      "id": "DFV29",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 47 à vista"
+    },
+    {
+      "id": "DFV30",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 47 à vista"
+    },
+    {
+      "id": "DFV31",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV32",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV33",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV34",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV35",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV36",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV37",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV38",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV39",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV40",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV41",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV42",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV43",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV44",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV45",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV46",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV47",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV48",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV49",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV50",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV51",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "DFV52",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 47 à vista"
+    },
+    {
+      "id": "DFV53",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 47 à vista"
+    },
+    {
+      "id": "DFV54",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 47 à vista"
+    },
+    {
+      "id": "DFV55",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 47 à vista"
+    },
+    {
+      "id": "DFV56",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 47 à vista"
+    },
+    {
+      "id": "DFV57",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 47 à vista"
+    },
+    {
+      "id": "DFV58",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 47 à vista"
+    },
+    {
+      "id": "DFV59",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 47 à vista"
+    },
+    {
+      "id": "DFV60",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 47 à vista"
+    },
+    {
+      "id": "TAC11",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "TAC12",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "TAC13",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "TAC14",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "TAC15",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "TAC16",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "TAC17",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "TAC18",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "TAC19",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "TAC20",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "TAC21",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "TAC22",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "TAC23",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "TAC24",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "TAC25",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 14,90"
+    },
+    {
+      "id": "TAC26",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 14,90"
+    },
+    {
+      "id": "TAC27",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 14,90"
+    },
+    {
+      "id": "TAC28",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 14,90"
+    },
+    {
+      "id": "TAC29",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 14,90"
+    },
+    {
+      "id": "TAC30",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 14,90"
+    },
+    {
+      "id": "SEQ01",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "SEQ02",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "SEQ03",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "SEQ04",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "SEQ05",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "SEQ06",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "SEQ07",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "SEQ08",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "SEQ09",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "SEQ10",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "SEQ11",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "SEQ12",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "SEQ13",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "SEQ14",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "SEQ15",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "SEQ16",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "SEQ17",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "SEQ18",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "SEQ19",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "SEQ20",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "SEQ21",
+      "width": 1080,
+      "height": 1080,
+      "price": null
+    },
+    {
+      "id": "SEQ22",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 14,90"
+    },
+    {
+      "id": "SEQ23",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 14,90"
+    },
+    {
+      "id": "SEQ24",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 14,90"
+    },
+    {
+      "id": "SEQ25",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 14,90"
+    },
+    {
+      "id": "SEQ26",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 14,90"
+    },
+    {
+      "id": "SEQ27",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 14,90"
+    },
+    {
+      "id": "SEQ28",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 14,90"
+    },
+    {
+      "id": "SEQ29",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 14,90"
+    },
+    {
+      "id": "SEQ30",
+      "width": 1080,
+      "height": 1080,
+      "price": "R$ 14,90"
+    }
+  ]
+}

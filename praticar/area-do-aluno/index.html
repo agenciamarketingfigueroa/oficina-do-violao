@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Entrar na área do aluno | Oficina do Violão</title>
+    <link rel="icon" type="image/png" href="../../assets/img/logo-square.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../flashcards/flashcards.css" />
+    <link rel="stylesheet" href="area.css" />
+    <script src="../../tracking.js"></script>
+    <script defer src="../../script.js"></script>
+    <script src="auth.js"></script>
+  </head>
+  <body class="practice-page student-page">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header scrolled" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="../../" aria-label="Oficina do Violão — início"><img class="logo-horizontal" src="../../assets/img/logo-horizontal.png" alt="Oficina do Violão" width="300" height="60" /></a>
+        <nav class="desktop-nav" aria-label="Navegação principal"><a href="../../">Início</a><a href="../">Ferramentas públicas</a><a href="./" aria-current="page">Área do aluno</a></nav>
+      </div>
+    </header>
+    <main id="conteudo" class="practice-main">
+      <div class="container practice-shell">
+        <p class="eyebrow"><span></span> Oficina do Violão</p>
+        <section class="student-login" data-student-login>
+          <h1>Área do <em>aluno.</em></h1>
+          <p class="practice-lead">Entre para acessar os jogos e seu teste de nível.</p>
+          <p><a class="student-public-link" href="../">Usar metrônomo e Tap Tempo sem login ↗</a></p>
+          <form class="student-form">
+            <label for="student-name">Nome completo</label>
+            <input id="student-name" name="name" autocomplete="name" required />
+            <label for="student-password">Senha</label>
+            <input id="student-password" name="password" type="password" autocomplete="current-password" required />
+            <p class="student-error" data-login-error role="alert" hidden>Confira a senha e tente novamente.</p>
+            <button class="button button-primary" type="submit">Entrar <span aria-hidden="true">↗</span></button>
+          </form>
+        </section>
+        <section class="student-dashboard" data-student-dashboard hidden>
+          <h1>Bem-vindo, <em data-student-name></em>.</h1>
+          <p class="practice-lead">Escolha uma atividade para praticar.</p>
+          <p><a class="student-public-link" href="../">Abrir ferramentas gratuitas de ritmo ↗</a></p>
+          <div class="practice-grid student-grid">
+            <article class="practice-deck-card"><div class="practice-card-top"><span>01 / JOGO</span></div><h2>Flashcards</h2><p>Revise cifras, termos e teoria musical em sessões rápidas.</p><a class="button button-primary" href="../flashcards/">Abrir Flashcards ↗</a></article>
+            <article class="practice-deck-card"><div class="practice-card-top"><span>02 / JOGO</span></div><h2>Quiz da Oficina</h2><p>Responda perguntas e confira na hora o que você já sabe.</p><a class="button button-outline" href="../quiz/">Abrir Quiz ↗</a></article>
+            <article class="practice-deck-card"><div class="practice-card-top"><span>03 / AVALIAÇÃO</span></div><h2>Teste nivelador</h2><p>Descubra seu ponto de partida e receba um plano de treino.</p><a class="button button-outline" href="../nivelador/">Fazer o teste ↗</a></article>
+          </div>
+          <button class="student-logout" type="button" data-student-logout>Sair da área do aluno</button>
+        </section>
+        <noscript><p>Ative o JavaScript para acessar a área do aluno.</p></noscript>
+      </div>
+    </main>
+  </body>
+</html>

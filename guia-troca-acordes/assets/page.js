@@ -1,5 +1,4 @@
 const cfg = window.GUIA_CONFIG;
-const trackingKeys = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "sck", "src", "fbclid"];
 
 if (cfg) {
   document.querySelectorAll("[data-price]").forEach((node) => { node.textContent = cfg.preco; });
@@ -14,12 +13,7 @@ const checkoutUrl = (() => {
 
 for (const link of document.querySelectorAll("[data-checkout]")) {
   if (checkoutUrl) {
-    const url = new URL(checkoutUrl);
-    const incoming = new URLSearchParams(window.location.search);
-    for (const key of trackingKeys) {
-      if (incoming.has(key)) url.searchParams.set(key, incoming.get(key));
-    }
-    link.href = url.toString();
+    link.href = window.OficinaTracking.checkoutUrl(checkoutUrl);
   } else {
     link.addEventListener("click", (event) => {
       event.preventDefault();
