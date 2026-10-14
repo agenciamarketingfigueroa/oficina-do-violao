@@ -35,8 +35,8 @@ const server = http.createServer(async (req, res) => {
       const query = '?utm_source=instagram&utm_medium=paid_social&utm_campaign=teste_quiz&utm_content=video_1&utm_term=violao&sck=quiz%7Cvideo_1&src=anuncio';
       if (name === 'desktop') {
         for (const [shortPath, destination] of [
-          ['/de-ferias/', '/de-ferias-com-o-violao/'],
-          ['/de-ferias-v2/', '/de-ferias-com-o-violao/quiz/'],
+          ['/de-ferias/', '/de-ferias-com-o-violao/quiz/'],
+          ['/de-ferias-v2/', '/de-ferias-com-o-violao/'],
         ]) {
           await page.goto(`${origin}${shortPath}${query}#inscricao`);
           await page.waitForURL(url => url.pathname === destination);
@@ -56,8 +56,7 @@ const server = http.createServer(async (req, res) => {
         else await page.locator('[data-offer]').waitFor({ state: 'visible' });
       };
       assert.equal(await page.locator('[data-offer]').isVisible(), false);
-      assert.match(await page.locator('[data-question-title]').innerText(), /Para conseguir aprender a tocar violão em pouco tempo, preciso saber:/);
-      assert.match(await page.locator('[data-question-title]').innerText(), /Em qual nível você está\?/);
+      assert.equal(await page.locator('[data-question-title]').innerText(), 'Como está seu aprendizado no violão hoje?');
       assert.equal(await page.locator('[role="progressbar"], [data-step], [data-progress], .quiz-intro').count(), 0);
       assert.equal(await page.locator('[data-options] button').count(), 3);
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
@@ -79,7 +78,7 @@ const server = http.createServer(async (req, res) => {
       await page.locator('[data-answer="musica"]').focus();
       await page.keyboard.press('Space');
       await waitAt(4);
-      assert.match(await page.locator('[data-question-help]').innerText(), /27 aulas gravadas em vídeo/);
+      assert.match(await page.locator('[data-question-help]').innerText(), /De Férias com o Violão tem 27 aulas gravadas em vídeo/);
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
       await page.screenshot({ path: path.join(__dirname, `qa-quiz-feature-${name}.png`), fullPage: true });
       await choose('ao-vivo', 5);

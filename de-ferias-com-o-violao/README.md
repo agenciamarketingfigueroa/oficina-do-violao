@@ -20,11 +20,11 @@ As artes são exportadas em JPG, exceto a imagem Open Graph da página. Os logos
 
 ## Quiz para tráfego
 
-- Links curtos para anúncios: `/de-ferias/` abre a página de vendas e `/de-ferias-v2/` abre o quiz. Ambos encaminham para a página original, conservando toda a query string (inclusive UTM, SCK e `fbclid`) e a âncora. O pixel dispara apenas na página de destino.
+- Links curtos para anúncios: `/de-ferias/` abre o quiz e `/de-ferias-v2/` abre a página de vendas. Ambos encaminham para a página original, conservando toda a query string (inclusive UTM, SCK e `fbclid`) e a âncora. O pixel dispara apenas na página de destino.
 
 - Nova entrada pública: `/de-ferias-com-o-violao/quiz/`. Abre diretamente na primeira pergunta, sem login.
 - Seis etapas: nível declarado, dificuldade, objetivo, aulas em vídeo, suporte do professor e grupo de alunos. É uma orientação de início baseada nas respostas, sem prova técnica ou promessa de prazo para aprender.
-- O quiz abre com “Para conseguir aprender a tocar violão em pouco tempo, preciso saber: Em qual nível você está?”, sem tela introdutória, barra de progresso ou contador de perguntas. Durante as perguntas, o cabeçalho fica oculto. O fundo escuro segue o site, com títulos, textos, ícones, opções e controles centralizados em uma coluna vertical. Os textos nas perguntas de dificuldade e objetivo se adaptam à resposta anterior.
+- O quiz abre com “Como está seu aprendizado no violão hoje?”, sem tela introdutória, barra de progresso ou contador de perguntas. Durante as perguntas, o cabeçalho fica oculto. O fundo escuro segue o site, com títulos, textos, ícones, opções e controles centralizados em uma coluna vertical. Os textos nas perguntas de dificuldade e objetivo se adaptam à resposta anterior.
 - Ao escolher uma resposta, o cartão confirma a seleção e avança com transições suaves e entrada em sequência das opções. As transições respeitam a preferência por movimento reduzido; cliques repetidos durante a mudança não pulam etapas. Botões acessíveis por teclado e opção de voltar permitem revisar as escolhas. Aulas em vídeo, suporte e grupo ganham destaques visuais durante a conversa.
 - Ao concluir, a oferta aparece primeiro, com preço de `config.js`, checkout e depois as seções de apresentação do curso. As respostas podem ser revistas sem repetir os eventos de conclusão na mesma visita.
 - Textos e lógica do quiz: `quiz/quiz.js`. Oferta e seções: `quiz/index.html`. Estilo: `quiz/quiz.css`.

@@ -2,8 +2,7 @@
   const questions = [
     {
       id: "nivel", label: "Seu ponto de partida", icon: "music",
-      lead: "Para conseguir aprender a tocar violão em pouco tempo, preciso saber:",
-      title: "Em qual nível você está?",
+      title: "Como está seu aprendizado no violão hoje?",
       help: "Todo começo vale. Escolha a opção que tem mais a ver com você.",
       options: [
         ["zero", "Vou começar do zero", "spark", "Ainda não sei tocar nada."],
@@ -32,7 +31,7 @@
     },
     {
       id: "video", label: "Um caminho que cabe na sua vida", icon: "play", title: "E se você pudesse pausar a aula e tentar de novo?",
-      help: "O curso tem 27 aulas gravadas em vídeo. Você segue a sequência e revê os movimentos no seu ritmo.",
+      help: "De Férias com o Violão tem 27 aulas gravadas em vídeo. Você segue a sequência e revê os movimentos no seu ritmo.",
       feature: "Dê o play no seu começo", caption: "Assista. Pause. Pratique. Repita.",
       options: [
         ["sim", "Sim, quero acompanhar passo a passo", "play"],
