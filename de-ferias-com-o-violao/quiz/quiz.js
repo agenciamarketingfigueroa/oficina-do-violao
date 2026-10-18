@@ -2,61 +2,78 @@
   const questions = [
     {
       id: "nivel", label: "Seu ponto de partida", icon: "music",
-      title: "Como está seu aprendizado no violão hoje?",
-      help: "Todo começo vale. Escolha a opção que tem mais a ver com você.",
+      lead: "Antes de começarmos, quero te conhecer um pouco melhor.",
+      title: "Em qual nível você está no violão?",
+      help: "",
       options: [
-        ["zero", "Vou começar do zero", "spark", "Ainda não sei tocar nada."],
-        ["primeiro-contato", "Já dei os primeiros passos", "route", "Tentei, mas acabei travando no começo."],
-        ["acordes", "Já conheço alguns acordes", "music", "Quero conseguir tocar uma música inteira."],
+        ["zero", "Começando do zero", "spark"],
+        ["primeiro-contato", "Já tentei, mas travei", "route"],
+        ["acordes", "Sei alguns acordes", "music"],
+        ["musicas", "Já toco algumas músicas", "mic"],
       ],
     },
     {
       id: "dificuldade", label: "Vamos destravar esse começo", icon: "compass", title: "O que mais te trava hoje?",
-      help: "Pense no que faz você deixar o violão de lado.",
+      help: "",
       options: [
-        ["direcao", "Não sei o que aprender primeiro", "compass"],
-        ["dedos", "Meus dedos não acertam e o som não sai", "music"],
-        ["rotina", "Começo animado e depois desisto", "repeat"],
-        ["ajuda", "Fico com dúvidas e não tenho ajuda", "chat"],
+        ["direcao", "Não sei por onde começar", "compass"],
+        ["dedos", "Os acordes não saem", "music"],
+        ["rotina", "Começo e acabo parando", "repeat"],
+        ["ajuda", "Falta alguém para me ajudar", "chat"],
+      ],
+    },
+    {
+      id: "frustracao", label: "O que ficou pelo caminho", icon: "repeat",
+      title: "O que mais desanima?", help: "",
+      options: [
+        ["soltos", "Ver vídeos e não evoluir", "play"],
+        ["parado", "Deixar o violão no canto", "music"],
+        ["duvidas", "Travar e não ter ajuda", "chat"],
+        ["nenhum", "Ainda não passei por isso", "spark"],
       ],
     },
     {
       id: "objetivo", label: "Agora, imagine a cena", icon: "spark", title: "O que você quer conseguir?",
-      help: "Imagine seu primeiro momento tocando.",
+      help: "",
       options: [
-        ["musica", "Tocar minha primeira música até o final", "music"],
-        ["cantar", "Tocar e cantar uma música de que gosto", "mic"],
-        ["lazer", "Ter um momento meu com a música", "heart"],
+        ["musica", "Tocar uma música inteira", "music"],
+        ["cantar", "Tocar e cantar junto", "mic"],
+        ["lazer", "Relaxar tocando violão", "heart"],
       ],
     },
     {
-      id: "video", label: "Um caminho que cabe na sua vida", icon: "play", title: "E se você pudesse pausar a aula e tentar de novo?",
-      help: "De Férias com o Violão tem 27 aulas gravadas em vídeo. Você segue a sequência e revê os movimentos no seu ritmo.",
-      feature: "Dê o play no seu começo", caption: "Assista. Pause. Pratique. Repita.",
+      id: "video", label: "Um passo de cada vez", icon: "play", title: "Aprender através de aulas em vídeo te ajudaria?",
+      help: "",
       options: [
-        ["sim", "Sim, quero acompanhar passo a passo", "play"],
-        ["repetir", "Seria ótimo poder repetir com calma", "repeat"],
-        ["ao-vivo", "Eu prefiro aulas ao vivo", "users"],
+        ["sim", "Quero acessar as 27 aulas de violão", "play"],
+        ["repetir", "Quero rever com calma", "repeat"],
+        ["ao-vivo", "Prefiro aulas ao vivo", "users"],
       ],
     },
     {
-      id: "suporte", label: "Você não precisa adivinhar tudo", icon: "chat", title: "Travou. Poder perguntar ao professor ajudaria?",
-      help: "O curso inclui suporte do professor para tirar as dúvidas que surgirem durante o estudo.",
-      feature: "Uma dúvida pode virar um próximo passo", caption: "Suporte do professor durante o estudo.",
+      id: "suporte", label: "Ajuda para seguir", icon: "chat", title: "Travou? E se pudesse perguntar?",
+      help: "",
       options: [
-        ["sim", "Muito! Ter a quem perguntar me ajudaria", "chat"],
-        ["quando-precisar", "Quero pedir ajuda quando precisar", "spark"],
-        ["sozinho", "Prefiro estudar com autonomia", "compass"],
+        ["sim", "Isso faria a diferença", "chat"],
+        ["quando-precisar", "Quero ajuda quando precisar", "spark"],
+        ["sozinho", "Gosto de tentar sozinho", "compass"],
       ],
     },
     {
-      id: "grupo", label: "Tem mais gente nesse começo", icon: "users", title: "E ter com quem dividir o primeiro “consegui!”?",
-      help: "Você também participa de um grupo de alunos para trocar experiências e dividir suas conquistas.",
-      feature: "Seu começo pode ser compartilhado", caption: "Um grupo de alunos para trocar experiências.",
+      id: "grupo", label: "Aprenda em companhia", icon: "users", title: "Bora aprender com mais gente?",
+      help: "",
       options: [
-        ["participar", "Eu ia gostar de trocar experiências", "users"],
-        ["acompanhar", "Gosto de acompanhar, mesmo falando pouco", "heart"],
-        ["individual", "Prefiro focar na minha prática individual", "music"],
+        ["participar", "Bora! Quero participar", "users"],
+        ["acompanhar", "Prefiro acompanhar de boa", "heart"],
+        ["individual", "Sou mais de praticar sozinho", "music"],
+      ],
+    },
+    {
+      id: "preco", label: "Último passo", icon: "spark", title: "Vamos tirar o violão do canto?",
+      help: "",
+      options: [
+        ["comecar", "Quero aproveitar essa oferta", "spark"],
+        ["detalhes", "Quero conhecer melhor o curso", "compass"],
       ],
     },
   ];
@@ -76,21 +93,6 @@
   };
   function icon(name) {
     return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${iconPaths[name] || iconPaths.music}</svg>`;
-  }
-
-  function helpFor(question) {
-    if (question.id === "dificuldade") return {
-      zero: "Começar do zero faz parte. O que mais dificulta dar esse primeiro passo?",
-      "primeiro-contato": "Você já tentou. Vamos entender o que ficou no caminho daquela vez.",
-      acordes: "Você já tem alguns acordes nas mãos. O que falta para eles virarem música?",
-    }[answers.nivel] || question.help;
-    if (question.id === "objetivo") return {
-      direcao: "Vamos dar uma direção a essa vontade. Imagine você tocando: qual seria a sua conquista?",
-      dedos: "Os movimentos ainda estão se encaixando. Quando eles saírem, o que você quer tocar?",
-      rotina: "Ter algo que você quer tocar pode dar sentido à prática. O que faria você pegar o violão?",
-      ajuda: "Guardar as dúvidas é frustrante. Com ajuda para seguir, o que você gostaria de conseguir?",
-    }[answers.dificuldade] || question.help;
-    return question.help;
   }
 
   const stage = document.querySelector("[data-quiz-form]");
@@ -117,6 +119,19 @@
   function render(focus = false) {
     const question = questions[step];
     panel.dataset.question = question.id;
+    const progress = document.querySelector("[data-progress]");
+    progress.setAttribute("aria-valuenow", String(step));
+    progress.setAttribute("aria-valuemax", String(questions.length));
+    progress.setAttribute("aria-valuetext", `${step} de ${questions.length} passos concluídos`);
+    progress.replaceChildren(...questions.map((_, index) => {
+      const dot = document.createElement("span");
+      dot.className = index < step ? "is-done" : index === step ? "is-current" : "";
+      dot.textContent = index < step ? "✓" : String(index + 1);
+      dot.setAttribute("aria-hidden", "true");
+      return dot;
+    }));
+    document.querySelector("[data-step]").textContent = `${step + 1} / ${questions.length}`;
+    document.querySelector("[data-phase]").textContent = question.id === "preco" ? "SEU PRÓXIMO PASSO" : step < 3 ? "SEU COMEÇO" : step < 4 ? "SUA CONQUISTA" : "SEU CAMINHO";
     document.querySelector("[data-topic]").textContent = question.label;
     document.querySelector("[data-topic-icon]").innerHTML = icon(question.icon);
     title.replaceChildren();
@@ -127,14 +142,12 @@
       title.append(lead, " ");
     }
     title.append(question.title);
-    document.querySelector("[data-question-help]").textContent = helpFor(question);
-    const feature = document.querySelector("[data-feature]");
-    feature.hidden = !question.feature;
-    if (question.feature) {
-      feature.querySelector("strong").textContent = question.feature;
-      feature.querySelector(".quiz-feature-caption").textContent = question.caption;
-      feature.querySelector(".quiz-feature-icon").innerHTML = icon(question.icon);
-    }
+    document.querySelector("[data-question-help]").textContent = question.help;
+    document.querySelector("[data-question-help]").hidden = !question.help;
+    document.querySelector("[data-answer-hint]").textContent = step === questions.length - 1 ? "Toque para ver todos os detalhes do curso" : "Toque em uma opção para avançar";
+    document.querySelector("[data-video-mockup]").hidden = question.id !== "video";
+    document.querySelectorAll("[data-chat-mockup]").forEach(mockup => { mockup.hidden = mockup.dataset.chatMockup !== question.id; });
+    document.querySelector("[data-quiz-price]").hidden = question.id !== "preco";
     options.replaceChildren();
     question.options.forEach(([value, text, symbol, hint]) => {
       const button = document.createElement("button");
@@ -222,15 +235,16 @@
       zero: "Seu começo é do zero. Tudo bem.",
       "primeiro-contato": "Seu primeiro contato já aconteceu. Agora, dê continuidade.",
       acordes: "Você já começou. O próximo passo é conectar o que aprendeu.",
+      musicas: "Seu próximo passo pode ser fortalecer a base.",
     };
     const painCopy = {
-      direcao: "Você contou que não sabe o que aprender primeiro. Uma sequência de aulas pode ajudar a organizar seu estudo, sem ter que escolher um vídeo novo a cada tentativa.",
-      dedos: "Você contou que os movimentos ainda não saem como gostaria. As aulas em vídeo permitem pausar, observar e repetir; o suporte do professor está disponível para suas dúvidas.",
-      rotina: "Você contou que é difícil manter a prática. Experimente reservar um momento possível da sua rotina para assistir a uma aula e praticar seu conteúdo antes de avançar.",
-      ajuda: "Você contou que uma dúvida costuma interromper seu estudo. O curso inclui suporte do professor para ajudar você a seguir com mais clareza.",
+      direcao: "Troque os vídeos soltos por uma sequência do zero às primeiras músicas.",
+      dedos: "Pause o vídeo, repita os movimentos e tire suas dúvidas com o professor.",
+      rotina: "Dê um passo por vez, com aulas em vídeo para encaixar na sua rotina.",
+      ajuda: "Tenha acesso ao professor para tirar dúvidas e seguir praticando.",
     };
     const goals = {
-      musica: "Seu objetivo: tocar sua primeira música até o final.",
+      musica: "Seu objetivo: tocar uma música até o final.",
       cantar: "Seu objetivo: acompanhar sua voz com o violão.",
       lazer: "Seu objetivo: ter um momento seu com a música.",
     };
@@ -238,6 +252,7 @@
     document.querySelector("[data-result-copy]").textContent = painCopy[answers.dificuldade];
     document.querySelector("[data-result-goal]").textContent = goals[answers.objetivo];
     document.querySelector("[data-live-note]").hidden = answers.video !== "ao-vivo";
+    document.querySelector("[data-level-note]").hidden = answers.nivel !== "musicas";
     panel.hidden = true;
     document.body.classList.remove("is-quizzing");
     document.querySelector('meta[name="theme-color"]').content = "#10100f";

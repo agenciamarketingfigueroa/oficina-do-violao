@@ -1,5 +1,6 @@
 const offer = window.FERIAS_CONFIG;
 
+for (const node of document.querySelectorAll("[data-original-price]")) node.textContent = offer.originalPrice;
 for (const node of document.querySelectorAll("[data-price]")) node.textContent = offer.price;
 for (const node of document.querySelectorAll("[data-installments]")) node.textContent = offer.installments;
 

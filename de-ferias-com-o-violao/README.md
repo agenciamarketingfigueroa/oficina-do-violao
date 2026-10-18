@@ -20,15 +20,17 @@ As artes são exportadas em JPG, exceto a imagem Open Graph da página. Os logos
 
 ## Quiz para tráfego
 
-- Links curtos para anúncios: `/de-ferias/` abre o quiz e `/de-ferias-v2/` abre a página de vendas. Ambos encaminham para a página original, conservando toda a query string (inclusive UTM, SCK e `fbclid`) e a âncora. O pixel dispara apenas na página de destino.
-
-- Nova entrada pública: `/de-ferias-com-o-violao/quiz/`. Abre diretamente na primeira pergunta, sem login.
-- Seis etapas: nível declarado, dificuldade, objetivo, aulas em vídeo, suporte do professor e grupo de alunos. É uma orientação de início baseada nas respostas, sem prova técnica ou promessa de prazo para aprender.
-- O quiz abre com “Como está seu aprendizado no violão hoje?”, sem tela introdutória, barra de progresso ou contador de perguntas. Durante as perguntas, o cabeçalho fica oculto. O fundo escuro segue o site, com títulos, textos, ícones, opções e controles centralizados em uma coluna vertical. Os textos nas perguntas de dificuldade e objetivo se adaptam à resposta anterior.
-- Ao escolher uma resposta, o cartão confirma a seleção e avança com transições suaves e entrada em sequência das opções. As transições respeitam a preferência por movimento reduzido; cliques repetidos durante a mudança não pulam etapas. Botões acessíveis por teclado e opção de voltar permitem revisar as escolhas. Aulas em vídeo, suporte e grupo ganham destaques visuais durante a conversa.
-- Ao concluir, a oferta aparece primeiro, com preço de `config.js`, checkout e depois as seções de apresentação do curso. As respostas podem ser revistas sem repetir os eventos de conclusão na mesma visita.
-- Textos e lógica do quiz: `quiz/quiz.js`. Oferta e seções: `quiz/index.html`. Estilo: `quiz/quiz.css`.
-- Pixel do curso: `306814880237849`. Eventos: `PageView` na abertura, `QuizStart` na primeira escolha, `QuizComplete` e `ViewContent` ao liberar a oferta, `InitiateCheckout` no clique de compra. Nenhuma resposta individual é enviada como parâmetro do pixel.
-- O `../../tracking.js` conserva UTM, SCK e os demais parâmetros permitidos durante a navegação na mesma aba. Os links mantêm `off` e `checkoutMode` do checkout. Exemplo: `/de-ferias-com-o-violao/quiz/?utm_source=instagram&utm_medium=paid_social&utm_campaign=ferias_quiz&utm_content=video_01&sck=ferias_quiz_video_01`.
-- A variante de campanha usa `noindex, follow`; a página principal do curso continua sendo a entrada de busca orgânica.
-- Verificação: `node de-ferias-com-o-violao/tools/qa-quiz.cjs`. Usa servidor local temporário e Edge/Playwright para conferir o fluxo em computador e celular, a oferta, os parâmetros de compra e a fila de eventos. As requisições da Meta são bloqueadas apenas no teste, para não gerar tráfego de QA no pixel.
+- Entrada para anúncios: **https://oficinadoviolao.com.br/de-ferias/**. Entrega o quiz diretamente, sem redirecionamento JavaScript ou meta refresh. Use a barra final: o GitHub Pages redireciona URLs de diretórios sem barra com HTTP 301.
+- A entrada antiga, /de-ferias-com-o-violao/quiz/, continua funcionando diretamente. As duas páginas usam os mesmos scripts, estilos e HTML; canonical e Open Graph apontam para /de-ferias/.
+- Fonte do HTML: quiz/index.html. Após editar, rode node de-ferias-com-o-violao/tools/sync-quiz.cjs para atualizar de-ferias/index.html. O QA confere a igualdade dos arquivos.
+- Oito perguntas fixas, sempre na mesma ordem: nível, dificuldade, desânimo, conquista desejada, aulas em vídeo, suporte direto do professor via WhatsApp, grupo no WhatsApp e oferta com ancoragem de preço. Nenhum texto de pergunta depende das respostas.
+- A abertura é “Antes de começarmos, quero te conhecer um pouco melhor. Em qual nível você está no violão?”. Opções curtas, ícones locais, progresso numerado e confirmação visual dão ritmo ao fluxo. Um toque seleciona e avança; voltar conserva a seleção.
+- Os benefícios aparecem em mockups ilustrativos: aulas na Hotmart em computador e celular, conversa de suporte direto com o professor via WhatsApp e grupo de alunos. As conversas são ilustrações, não capturas nem depoimentos reais. A resposta das videoaulas inclui “Quero acessar as 27 aulas de violão”.
+- A última etapa apresenta a ancoragem de R$ 147 por R$ 47; qualquer uma de suas respostas libera a oferta completa e as seções de vendas. Oferta de R$ 147 por R$ 47 por tempo limitado, sem cronômetro artificial. Valores e checkout ficam em config.js.
+- O resumo final usa nível, dificuldade e objetivo. Quem prefere aulas ao vivo vê uma observação sobre o formato gravado; quem já toca músicas vê a indicação de que o curso cobre a base.
+- Texto e lógica: quiz/quiz.js. Estilos: quiz/quiz.css. Acessibilidade: opções por teclado, foco no título a cada etapa, progresso acessível e respeito a movimento reduzido.
+- Pixel do curso: 306814880237849. Eventos: PageView na abertura, QuizStart na primeira escolha, QuizComplete e ViewContent ao liberar a oferta, InitiateCheckout na compra. Rever respostas não duplica esses eventos. Respostas individuais não são enviadas ao pixel.
+- /tracking.js preserva UTM, SCK, fbclid e outros parâmetros permitidos até o checkout. off e checkoutMode continuam intactos.
+- /de-ferias-v2/ mantém seu encaminhamento para a página de vendas original. O quiz usa noindex, follow.
+- Verificação: node de-ferias-com-o-violao/tools/qa-quiz.cjs. Usa Edge e playwright-core (do ambiente ou junto do executável Node). Confere entradas sem redirecionamento, sequência fixa com respostas diferentes, navegação por teclado, clique duplo, retorno, oferta, rastreamento e recursos locais em 1440×900, 390×844 e 320×640. Requisições da Meta são bloqueadas no teste.
+- A remoção do salto elimina uma navegação extra; o efeito no connect rate precisa ser medido na campanha após a publicação.
